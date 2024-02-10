@@ -33,3 +33,37 @@
   font-weight: 900;
   src: url("../fonts/inter-v13-latin-900.woff2") format("woff2");
 }
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lexen Deca", Arial, sans-serif;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  border: 50%;
+  width: 1rem;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.641);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.723);
+  outline: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.main__div {
+  color: red;
+} /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,102 @@
+.header__main-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .website__logo {
+    width: 200px;
+    height: 30px;
+  }
+
+  #header__select {
+    padding-right: 10px;
+    width: 150px;
+    padding: 15px 20px;
+    appearance: none;
+    color: $brand-button-color;
+    font-weight: 600;
+    background-color: #f0f0ff;
+    border: 2px solid;
+    border-color: transparent;
+    outline-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: $header-select-color;
+      background-color: $header-select-hover;
+    }
+  }
+  .header__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 360px;
+    position: relative;
+  }
+
+  #srchInp {
+    width: 360px;
+    border-radius: 4px;
+    border: 1px solid #70c05b;
+    background: #fff;
+    display: flex;
+    padding: 11.25px 10px;
+  }
+
+  .srchBtn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+  }
+
+  .header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 14px;
+  }
+
+  .header__list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__user-box {
+    display: flex;
+    align-items: center;
+  }
+  .header__user-name {
+    text-transform: capitalize;
+    margin-right: 10px;
+  }
+
+  .header__like-button,
+  .header__user-button,
+  .header__basket-button {
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 10px;
+  }
+
+  .basket__count {
+    border: 1px solid transparent;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    font-size: 14px;
+    padding: 1.5px;
+  }
+}

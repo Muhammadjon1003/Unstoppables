@@ -78,8 +78,8 @@ body::-webkit-scrollbar-thumb {
   width: 150px;
   padding: 15px 20px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #7000ff;
   font-weight: 600;
   background-color: #f0f0ff;
@@ -158,4 +158,4 @@ body::-webkit-scrollbar-thumb {
   top: 13px;
   font-size: 14px;
   padding: 1.5px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

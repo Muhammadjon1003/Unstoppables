@@ -36,7 +36,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 25px;
 }
 
 * {
@@ -64,22 +64,23 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
-.header__main-box {
+.header .header__main-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 25px;
 }
-.header__main-box .website__logo {
+.header .website__logo {
   width: 200px;
   height: 30px;
 }
-.header__main-box #header__select {
+.header #header__select {
   padding-right: 10px;
   width: 150px;
-  padding: 15px 20px;
+  padding: 11px 20px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #7000ff;
   font-weight: 600;
   background-color: #f0f0ff;
@@ -90,72 +91,70 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.header__main-box #header__select:hover {
+.header #header__select:hover {
   color: #7000ff;
   background-color: #c0c0db;
 }
-.header__main-box .header__form {
+.header .header__form {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 360px;
+  max-width: 480px;
   position: relative;
 }
-.header__main-box #srchInp {
-  width: 360px;
+.header #srchInp {
+  width: 480px;
   border-radius: 4px;
-  border: 1px solid #70c05b;
+  border: 0px;
   background: #fff;
   display: flex;
   padding: 11.25px 10px;
+  outline: 1px solid rgba(54, 54, 64, 0.2);
 }
-.header__main-box .srchBtn {
-  background-color: transparent;
+.header .srchBtn {
+  background-color: #f2f4f7;
+  padding: 10.3px 20px;
   border: 1px solid transparent;
   position: absolute;
-  right: 10px;
-  top: 12px;
+  right: 0px;
+  top: 0px;
   cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
 }
-.header__main-box .header__list {
+.header .header__list {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 40px;
+  gap: 20px;
   font-size: 14px;
 }
-.header__main-box .header__list li {
+.header .header__list li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header__main-box .header__user-box {
+.header .header__list li button {
   display: flex;
   align-items: center;
-}
-.header__main-box .header__user-name {
-  text-transform: capitalize;
-  margin-right: 10px;
-}
-.header__main-box .header__like-button,
-.header__main-box .header__user-button,
-.header__main-box .header__basket-button {
-  border-color: transparent;
+  font-size: 18px;
   background-color: transparent;
-  cursor: pointer;
-  font-size: 20px;
-}
-.header__main-box .basket__count {
   border: 1px solid transparent;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
-  position: absolute;
-  right: 25px;
-  top: 13px;
+  padding: 9px 7px;
+  gap: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.header .header__list li button:hover {
+  background-color: #d4d4d4;
+}
+.header .header__list li button p {
   font-size: 14px;
-  padding: 1.5px;
-} /*# sourceMappingURL=styles.css.map */
+}
+.header .basket__count {
+  color: #fff;
+  padding: 0px 3px;
+  background: #7000ff;
+  border-radius: 3px;
+}/*# sourceMappingURL=styles.css.map */

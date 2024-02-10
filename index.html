@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <header>
+  <header class="header">
     <div class="container">
       <div class="header__main-box">
         <div class="header__logo">
@@ -115,13 +115,16 @@
           </a>
         </div>
         <div class="header__category">
-          <select name="select" id="header__select">
-            <option id="selectButton" value="Каталог">☰ &nbsp; Каталог</option>
-          </select>
+          <button id="header__select">Каталог</button>
           <!-- <div id="header__select-btn"></div> -->
         </div>
         <form class="header__form">
-          <input id="srchInp" type="input" placeholder="Найти товар" required />
+          <input
+            id="srchInp"
+            type="input"
+            placeholder="Искать товары и категории"
+            required
+          />
           <button class="srchBtn">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -130,19 +133,19 @@
         <ul class="header__list">
           <li class="header__user-box">
             <button class="header__user-button">
-              <i class="fa-regular fa-user"></i>
-              <p class="header__user-name"></p>
+              <i class="fa-regular fa-user" style="color: #7000ff"></i>
+              <p class="header__user-name">Samandar</p>
             </button>
           </li>
           <li>
             <button class="header__like-button">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart" style="color: #7000ff"></i>
               <p class="header__list-text">Избранное</p>
             </button>
           </li>
           <li>
             <button class="header__basket-button">
-              <i class="fa-solid fa-cart-arrow-down"></i>
+              <i class="fa-solid fa-box-archive" style="color: #7000ff"></i>
               <p class="header__list-text">Корзина</p>
               <span class="basket__count">0</span>
             </button>

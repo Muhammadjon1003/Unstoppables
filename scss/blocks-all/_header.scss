@@ -1,7 +1,11 @@
-.header__main-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@import "../veriables.scss";
+.header {
+  .header__main-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+  }
 
   .website__logo {
     width: 200px;
@@ -11,9 +15,9 @@
   #header__select {
     padding-right: 10px;
     width: 150px;
-    padding: 15px 20px;
+    padding: 11px 20px;
     appearance: none;
-    color: $brand-button-color;
+    color: $header-select-color;
     font-weight: 600;
     background-color: #f0f0ff;
     border: 2px solid;
@@ -28,30 +32,34 @@
       background-color: $header-select-hover;
     }
   }
+
   .header__form {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 360px;
+    max-width: 480px;
     position: relative;
   }
 
   #srchInp {
-    width: 360px;
+    width: 480px;
     border-radius: 4px;
-    border: 1px solid #70c05b;
+    border: 0px;
     background: #fff;
     display: flex;
     padding: 11.25px 10px;
+    outline: 1px solid $header-search;
   }
 
   .srchBtn {
-    background-color: transparent;
+    background-color: $header-srch-button;
+    padding: 10.3px 20px;
     border: 1px solid transparent;
     position: absolute;
-    right: 10px;
-    top: 12px;
+    right: 0px;
+    top: 0px;
     cursor: pointer;
+    border-radius: 0px 4px 4px 0px;
   }
 
   .header__list {
@@ -59,7 +67,7 @@
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 40px;
+    gap: 20px;
     font-size: 14px;
   }
 
@@ -68,35 +76,30 @@
     align-items: center;
     justify-content: center;
   }
-
-  .header__user-box {
+  .header__list li button {
     display: flex;
     align-items: center;
-  }
-  .header__user-name {
-    text-transform: capitalize;
-    margin-right: 10px;
-  }
-
-  .header__like-button,
-  .header__user-button,
-  .header__basket-button {
-    border-color: transparent;
+    font-size: 18px;
     background-color: transparent;
-    font-size: 10px;
+    border: 1px solid transparent;
+    padding: 9px 7px;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $header-btn-hover;
+    }
+  }
+  .header__list li button p {
+    font-size: 14px;
   }
 
   .basket__count {
-    border: 1px solid transparent;
-    color: white;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
-    right: 25px;
-    top: 13px;
-    font-size: 14px;
-    padding: 1.5px;
+    color: #fff;
+    padding: 0px 3px;
+    background: $header-select-color;
+    border-radius: 3px;
   }
 }

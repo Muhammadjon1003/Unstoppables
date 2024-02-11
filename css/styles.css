@@ -167,16 +167,32 @@ body::-webkit-scrollbar-thumb {
 .header .header__bottom-wrapper {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
   padding-top: 20px;
+  position: relative;
+}
+.header .header__bottom-inner {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  gap: 10px;
+  justify-content: space-between;
+}
+.header .header__bottom-inner.open {
+  flex-direction: column;
 }
 .header .header__bottom-links {
-  width: 67%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
+}
+.header .header__bottom-links.open {
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
 }
 .header .header__bottom-links a {
   color: #595b66;
@@ -203,13 +219,18 @@ body::-webkit-scrollbar-thumb {
   color: black;
 }
 .header .header__bottom-buttons {
-  width: 23%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
   font-size: 14px;
   font-weight: 600;
+}
+.header .header__bottom-buttons.open {
+  flex-direction: column;
+  align-items: start;
+  left: 0;
+  gap: 10px;
 }
 .header .header__bottom-buttons a {
   display: flex;
@@ -219,9 +240,11 @@ body::-webkit-scrollbar-thumb {
   color: black;
 }
 .header .header__other-button {
-  width: 7%;
+  width: 1%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  position: fixed;
+  right: 60px;
 }
 .header .header__link-list {
   display: flex;

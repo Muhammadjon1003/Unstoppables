@@ -24,6 +24,11 @@ function getStorageItems(key) {
   }
 }
 
+function addUserItemToStorage(id, email, username, password) {
+  let item = { id, email, username, password};
+  localStorage.setItem('user', JSON.stringify(item));
+}
+
 function addItemToStorage(id, key) {
   const liked = { id };
   const likes = getStorageItems(key);
@@ -1889,6 +1894,7 @@ export {
   get,
   menuArray,
   getStorageItems,
+  addUserItemToStorage,
   addItemToStorage,
   removeItemFromStorage,
 };

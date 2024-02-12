@@ -1,4 +1,7 @@
 @import "../veriables.scss";
+
+
+
 .header {
   .header__main-box {
     display: flex;
@@ -144,7 +147,9 @@
     gap: 10px;
   }
 
-  .header__bottom-links a {
+
+
+  .header__links {
     color: $header-link-color;
 
     position: relative;
@@ -171,6 +176,15 @@
     &:hover {
       color: black;
     }
+  }
+
+  .header__links.open {
+
+
+    &:hover{
+      color: red;
+    }
+
   }
 
   .header__bottom-buttons {

@@ -194,11 +194,11 @@ body::-webkit-scrollbar-thumb {
   align-items: start;
   gap: 10px;
 }
-.header .header__bottom-links a {
+.header .header__links {
   color: #595b66;
   position: relative;
 }
-.header .header__bottom-links a::before {
+.header .header__links::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -211,12 +211,15 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(0);
   transition: transform 0.4s ease-in-out;
 }
-.header .header__bottom-links a:hover::before {
+.header .header__links:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
-.header .header__bottom-links a:hover {
+.header .header__links:hover {
   color: black;
+}
+.header .header__links.open:hover {
+  color: red;
 }
 .header .header__bottom-buttons {
   width: 25%;

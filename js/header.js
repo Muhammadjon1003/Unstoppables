@@ -1,4 +1,5 @@
 import { menuArray, get } from "./utilis.js";
+
 let mainBox = get(".header__bottom-links");
 let otherProducts = get(".header__other-btn");
 let otherDownArrow = get(".arrow__down");
@@ -9,6 +10,7 @@ let basketButton = get(".header__basket-button");
 let headerBottomLinks = get(".header__bottom-links");
 let headerBottom = get(".header__bottom-inner");
 let headerBottomBtns = get(".header__bottom-buttons");
+let headerLinks = get(".header__links")
 
 window.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
@@ -20,7 +22,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
         return `
         <ul class="header__link-list">
           <li>
-            <a href="">
+            <a  class="header__link" href="">
              ${category[0]}
             </a>
           </li>
@@ -29,19 +31,20 @@ window.addEventListener("DOMContentLoaded", (e) => {
       }
     })
     .join(""); // Apply join to the result of map
-
-  mainBox.innerHTML += display;
-
-  otherProducts.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (otherDownArrow.classList.contains("open")) {
-      otherDownArrow.classList.remove("open");
-      otherDownArrow.classList.add("hidden");
-      headerBottomLinks.classList.add("open");
-      headerBottom.classList.add("open");
-      headerBottomBtns.classList.add("open");
-      otherText.style.display = "none";
-
+    
+    mainBox.innerHTML += display;
+    
+    otherProducts.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (otherDownArrow.classList.contains("open")) {
+        otherDownArrow.classList.remove("open");
+        otherDownArrow.classList.add("hidden");
+        headerBottomLinks.classList.add("open");
+        headerBottom.classList.add("open");
+        headerBottomBtns.classList.add("open");
+        otherText.style.display = "none";
+        headerLinks.classList.add("open")
+        
       otherXArrow.classList.remove("hidden");
       otherXArrow.classList.add("open");
     } else {

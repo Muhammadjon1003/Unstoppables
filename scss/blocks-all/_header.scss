@@ -129,9 +129,7 @@
     justify-content: space-between;
   }
 
-  .header__bottom-inner.open {
-    flex-direction: column;
-  }
+ 
 
   .header__bottom-links {
     width: 80%;
@@ -141,15 +139,161 @@
     font-size: 14px;
   }
 
-  .header__bottom-links.open {
+  .header__bottom-box{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 40px;
+    width: 98%;
+  }
+
+
+  .header__bottom-wrapper.open{
+    width: 100%;
+    align-items: start;
+    height: 450px;
+  }
+
+
+  .header__shadow{
+    box-shadow: 0px 12px 22px 9px white;
+  }
+  
+  .header__bottom-wrapper.open  .header__shadow{
+    box-shadow: 0px 12px 22px 9px rgba(34, 60, 80, 0.2);
+  }
+
+  .header__bottom-secInner{
+    display: none;
+  }
+
+  .header__bottom-wrapper.open .header__bottom-secInner{
+    display: block;
+    height: 100%;
+    width: 70%;
+  }
+
+  .header__bottom-wrapper.open .header__bottom-secInner div{
+    width: 100%;
+  }
+
+.header__bottom-wrapper.open .header__bottom-inner{
+  flex-direction: column;
+  align-items: start;
+  margin-top: 15px;
+  border-right: 1px solid #000;
+  width: 20%;
+}
+
+  .header__bottom-wrapper.open .header__bottom-links{
     flex-direction: column;
     align-items: start;
+    width: 100%;
+  
+  }
+
+
+  .header__bottom-wrapper.open   .header__bottom-buttons {
+    flex-direction: column;
+    align-items: start;
+    left: 0;
     gap: 10px;
+    width: 100%;
+    margin-left: 10px;
+   
   }
 
 
 
-  .header__links {
+  .header__bottom-wrapper.open .header__link-list{
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__link-list li div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .header__bottom-wrapper.open .header__link-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:  8px 10px ;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover{
+      background: rgba(178, 158, 158, 0.23);
+      color: #000;
+
+    }
+  }
+
+
+
+
+
+  .header__bottom-wrapper.open .header__link{
+    
+font-weight: 600;
+    &:hover{
+      color: $header-select-color;
+
+      border-bottom: 0px;
+
+      &::before{
+        display: none;
+
+      }
+    }
+  }
+
+  .product__icon, .right__arrow{
+    display: none;
+  }
+
+  .header__bottom-wrapper.open  .right__arrow{
+    display: block;
+  }
+
+  .header__bottom-wrapper.open .product__icon{
+    display: block;
+    margin-right: 10px;
+  }
+
+
+  .hover__title{
+    color: black;
+font-size: 22px;
+font-weight: 600;
+
+  }
+
+  .hover__list{
+    display: flex;
+    align-items: start;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 350px;
+    gap: 3px;
+    margin-top: 10px;
+    
+  }
+
+  .bottom__hover-link{
+    color: $header-link-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      color: #000;
+    }
+  }
+
+
+  .header__link {
     color: $header-link-color;
 
     position: relative;
@@ -178,7 +322,7 @@
     }
   }
 
-  .header__links.open {
+  .header__link.open {
 
 
     &:hover{
@@ -196,12 +340,6 @@
     font-weight: 600;
   }
 
-  .header__bottom-buttons.open {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    gap: 10px;
-  }
 
   .header__bottom-buttons a {
     display: flex;
@@ -209,14 +347,18 @@
     justify-content: space-between;
     gap: 5px;
     color: black;
+
+    &:hover{
+      color: $header-select-color;
+
+    }
   }
 
   .header__other-button {
     width: 1%;
     display: flex;
     justify-content: end;
-    position: fixed;
-    right: 60px;
+    margin-right: 10px;
   }
 
   .header__link-list {
@@ -237,26 +379,23 @@
     cursor: pointer;
   }
 
-  .arrow__down,
-  .arrow__up {
+  .arrow__down, .arrow__up {
     opacity: 0;
-    height: 0;
+    height: 10px;
     overflow: hidden;
     display: none;
     transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out,
       display 0s 0.3s;
   }
 
-  .arrow__up.open,
-  .arrow__down.open {
+  .arrow__down.open, .arrow__up.open {
     opacity: 1;
     height: auto;
     display: inline-block;
     animation: fadeInRotate 0.3s ease-in-out;
   }
 
-  .arrow__up.hidden,
-  .arrow__down.hidden {
+  .arrow__down.hidden, .arrow__up.hidden {
     opacity: 0;
     height: 0;
     animation: fadeOutRotate 0.3s ease-in-out;

@@ -5,14 +5,19 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
     let mainBox = get(".header__bottom-links");
     let otherProducts = get(".header__other-btn");
-    let otherDownArrow = get(".arrow__down");
     let otherXArrow = get(".arrow__up");
-    let otherText = get(".header__other-text");
     let likesButton = get(".header__like-button");
     let basketButton = get(".header__basket-button");
-    let headerBottomLinks = get(".header__bottom-wrapper");
     let productNames = get(".header__bottom-secInner");
+    let headerSelect = get(".header__select")
+    let otherDownArrow = get(".arrow__down");
+    let otherText = get(".header__other-text");
+    let headerBottomLinks = get(".header__bottom-wrapper");
     let headerShadow = get(".header__shadow")
+    let selectDefault = get(".product__default")
+    let selectX = get(".selectX")
+   
+
 
     let display = menuArray
         .map((item, index) => {
@@ -51,29 +56,64 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
     let mouseOverTimeout;
     let currentClickedItem = null;
-    
-    otherProducts.addEventListener("click", (e) => {
-        e.preventDefault();
+
+    function toggleMenu() {
+       
+      
+        
         if (otherDownArrow.classList.contains("open")) {
             otherDownArrow.classList.remove("open");
             otherDownArrow.classList.add("hidden");
+      
+            selectDefault.classList.remove("open");
+            selectDefault.classList.add("hidden");
+      
             headerBottomLinks.classList.add("open");
             otherText.style.display = "none";
             otherXArrow.classList.remove("hidden");
             otherXArrow.classList.add("open");
-            headerShadow.style.boxShadow = " 0px 12px 22px 9px rgba(34, 60, 80, 0.2)"
+            
+            selectX.classList.remove("hidden");
+            selectX.classList.add("open");
+      
+            headerShadow.style.boxShadow = "0px 12px 22px 9px rgba(34, 60, 80, 0.2)";
             updateEventListeners();
         } else {
             otherXArrow.classList.remove("open");
             otherXArrow.classList.add("hidden");
+      
+            selectX.classList.remove("open");
+            selectX.classList.add("hidden");
+      
             otherDownArrow.classList.remove("hidden");
             otherDownArrow.classList.add("open");
+      
+            selectDefault.classList.remove("hidden");
+            selectDefault.classList.add("open");
+      
             headerBottomLinks.classList.remove("open");
             otherText.style.display = "inline-block";
-            headerShadow.style.boxShadow = "none"
+            headerShadow.style.boxShadow = "none";
         }
+      }
+    
+    
+    headerSelect.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+       
+        toggleMenu();
+
+        otherXArrow.classList.add("hidden");
+
     });
     
+    otherProducts.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleMenu();
+    });
+    
+
     function updateEventListeners() {
       headerListItems.forEach((item) => {
           item.addEventListener("click", () => handleItemClick(item));
@@ -123,11 +163,14 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
     productNames.innerHTML = `
         <div>
-            <a href="headerFullSingle.html?category=${category}" class="hover__title">${category}  <i class="fa-solid fa-chevron-right" style="color: #000000; margin-left: 5px; padding-bottom: -10px;"></i></a>
+            <a href="headerFullSingle.html?category=${category}" class="hover__title"><h3>${category}</h3><i class="left__hover fa-solid fa-chevron-right" "></i></a>
             <ul class="hover__list">${displayProducts}</ul>
         </div>
     `;
 }
+
+
+
   
 });
 

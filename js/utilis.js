@@ -35,6 +35,8 @@ function addItemToStorage(id, key) {
   }
 }
 
+
+
 function removeItemFromStorage(id, key) {
   const likes = getStorageItems(key);
   const updatedLikes = likes.filter((item) => item.id !== id);
@@ -1891,4 +1893,5 @@ export {
   getStorageItems,
   addItemToStorage,
   removeItemFromStorage,
+  
 };

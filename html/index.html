@@ -118,8 +118,12 @@
                 </a>
               </div>
               <div class="header__category">
-                <button id="header__select">Каталог</button>
-                <!-- <div id="header__select-btn"></div> -->
+                <button class="header__select open">
+                  <i class="product__default fa-brands fa-product-hunt open"></i>
+                  <i class="selectX fa-solid fa-xmark hidden"></i>
+                  &nbsp;
+                  Каталог
+                </button>
               </div>
               <form class="header__form">
                 <input
@@ -144,6 +148,8 @@
                   <button class="header__like-button">
                     <i class="fa-regular fa-heart" style="color: #7000ff"></i>
                     <p class="header__list-text">Избранное</p>
+                    <span class="likes__count">0</span>
+
                   </button>
                 </li>
                 <li>

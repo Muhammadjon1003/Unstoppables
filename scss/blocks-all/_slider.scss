@@ -1,0 +1,37 @@
+.slider {
+    width: 1152px;
+    height: 400px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+
+
+ img {
+ position: absolute;
+ top: 50%;
+transform: translateY(-50%);
+ z-index: 1;
+   }
+  }
+  .slider-img{
+    width: 100%;
+    // padding: 25px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 15px;
+      &.active{
+        opacity: 1;
+      }
+ }
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  } 
+  

@@ -10,23 +10,24 @@
 <body>
     <div class="login__wrapper">
         <div class="login__cont">
-            <h2 class="signUp-title">Войти</h2>
+            <h2 class="signUp-title">Зарегистрироваться</h2>
             <form action="" class="login__form">
+                <input type="email" placeholder="Email" id="email-input"> 
                 <input type="text" placeholder="Имя пользователя" id="username-input">
                 <div class="password">
                     <input type="password" placeholder="Пароль" id="password-input">
                     <button type="button" class="password-btn"><i class="fa-regular fa-eye"></i></button>
                 </div>
                 <p class="login__error-text"></p>
-                <button type="button" class="signUp-btn">Войти</button>
+                <button type="button" class="signUp-btn">Зарегистрироваться</button>
             </form>
             <div class="login__box">
-                <p class="login-title">У вас еще нет аккаунта?</p>
-                <button class="login-btn">Зарегистрироваться</button>
+                <p class="login-title">У вас уже есть аккаунт?</p>
+                <button class="login-btn">Войти</button>
             </div>
         </div>
     </div>
 
-    <script type="module" src="../js/login.js"></script>
+    <script type="module" src="../js/signUp.js"></script>
 </body>
 </html>

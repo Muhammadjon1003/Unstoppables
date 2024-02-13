@@ -57,7 +57,6 @@ signUpBtn.addEventListener('click', function() {
             errorText.textContent = "Пользователь не найден";
             throw new Error('Пользователь не найден');
         }
-        
     }
 });
 

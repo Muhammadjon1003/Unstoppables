@@ -319,11 +319,17 @@ const menuArray = [
   },
   {
     id: 20,
-    title:
-      "assumenda voluptatem laboriosam enim consequatur veniam placeat reiciendis error",
+    title: "Opna Women's Short Sleeve Moisture",
+    price: 475,
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque id nisi commodi consequuntur asperiores!",
+    rating: 4.52,
 
-    url: "https://via.placeholder.com/600/8985dc",
-    thumbnailUrl: "https://via.placeholder.com/150/8985dc",
+    image:
+      "https://images.uzum.uz/cklotqjk9fq68304kta0/t_product_540_high.jpg#1707622468871",
+    category: "Хобби и творчество",
+    discountPrice: 39.99,
+    replyNumber: 219,
   },
   {
     id: 21,
@@ -348,7 +354,7 @@ const menuArray = [
     category: " Аксессуары",
     discountPrice: 39.99,
     replyNumber: 22,
-    images: "https://cdn.dummyjson.com/product-images/1/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/1/1.jpg",
   },
   {
     id: 23,
@@ -361,7 +367,7 @@ const menuArray = [
     discountPrice: 31.99,
     replyNumber: 20,
     category: " Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/2/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/2/1.jpg",
   },
   {
     id: 24,
@@ -374,7 +380,7 @@ const menuArray = [
     replyNumber: 22,
     category: "smartphones",
     thumbnail: "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
-    images: "https://cdn.dummyjson.com/product-images/3/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/3/1.jpg",
   },
   {
     id: 25,
@@ -386,7 +392,7 @@ const menuArray = [
     discountPrice: 19.99,
     replyNumber: 22,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/4/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/4/1.jpg",
   },
   {
     id: 26,
@@ -398,7 +404,7 @@ const menuArray = [
     discountPrice: 19.99,
     replyNumber: 22,
     category: " Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/5/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/5/1.jpg",
   },
   {
     id: 27,
@@ -411,7 +417,7 @@ const menuArray = [
     discountPrice: 39.99,
     category: "Здоровье",
     replyNumber: 22,
-    images: "https://cdn.dummyjson.com/product-images/6/1.png",
+    image: "https://cdn.dummyjson.com/product-images/6/1.png",
   },
   {
     id: 28,
@@ -423,7 +429,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: " Электроника",
-    images: "https://cdn.dummyjson.com/product-images/7/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/7/1.jpg",
   },
   {
     id: 29,
@@ -435,7 +441,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/8/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/8/1.jpg",
   },
   {
     id: 30,
@@ -447,7 +453,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/9/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/9/1.jpg",
   },
   {
     id: 31,
@@ -459,7 +465,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/10/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/10/1.jpg",
   },
   {
     id: 32,
@@ -471,7 +477,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/11/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/11/1.jpg",
   },
   {
     id: 33,
@@ -482,7 +488,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 12,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/12/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/12/1.jpg",
   },
   {
     id: 34,
@@ -494,7 +500,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Хобби и творчество",
-    images: "https://cdn.dummyjson.com/product-images/13/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/13/1.jpg",
   },
   {
     id: 35,
@@ -506,7 +512,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Хобби и творчество",
-    images: "https://cdn.dummyjson.com/product-images/14/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/14/1.jpg",
   },
   {
     id: 36,
@@ -518,7 +524,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: " Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/15/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/15/1.jpg",
   },
   {
     id: 37,
@@ -530,7 +536,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "skincare",
-    images: "https://cdn.dummyjson.com/product-images/16/1.png",
+    image: "https://cdn.dummyjson.com/product-images/16/1.png",
   },
   {
     id: 38,
@@ -542,7 +548,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/17/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/17/1.jpg",
   },
   {
     id: 39,
@@ -554,7 +560,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "skincare",
-    images: "https://cdn.dummyjson.com/product-images/18/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/18/1.jpg",
   },
   {
     id: 40,
@@ -566,7 +572,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/19/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/19/1.jpg",
   },
   {
     id: 41,
@@ -578,7 +584,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/20/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/20/1.jpg",
   },
   {
     id: 42,
@@ -586,9 +592,10 @@ const menuArray = [
     description: "Fine quality Branded Product Keep in a cool and dry place",
     price: 20,
     rating: 4.12,
+    category: " Здоровье",
     discountPrice: 39.99,
     replyNumber: 22,
-    images: "https://cdn.dummyjson.com/product-images/21/1.png",
+    image: "https://cdn.dummyjson.com/product-images/21/1.png",
   },
   {
     id: 43,
@@ -599,7 +606,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: " Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/22/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/22/1.jpg",
   },
   {
     id: 44,
@@ -611,7 +618,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/23/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/23/1.jpg",
   },
   {
     id: 45,
@@ -623,7 +630,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/24/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/24/1.jpg",
   },
   {
     id: 46,
@@ -634,7 +641,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/25/1.png",
+    image: "https://cdn.dummyjson.com/product-images/25/1.png",
   },
   {
     id: 47,
@@ -646,7 +653,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Товары для дома",
-    images: "https://cdn.dummyjson.com/product-images/26/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/26/1.jpg",
   },
   {
     id: 48,
@@ -658,7 +665,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Товары для дома",
-    images: "https://cdn.dummyjson.com/product-images/27/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/27/1.jpg",
   },
   {
     id: 49,
@@ -670,7 +677,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Товары для дома",
-    images: "https://cdn.dummyjson.com/product-images/28/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/28/1.jpg",
   },
   {
     id: 50,
@@ -682,7 +689,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Хобби и творчество",
-    images: "https://cdn.dummyjson.com/product-images/29/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/29/1.jpg",
   },
   {
     id: 51,
@@ -694,7 +701,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 22,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/30/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/30/1.jpg",
   },
   {
     id: 52,
@@ -706,7 +713,7 @@ const menuArray = [
     discountPrice: 59.99,
     replyNumber: 18,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/52/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/52/1.jpg",
   },
   {
     id: 53,
@@ -718,7 +725,7 @@ const menuArray = [
     discountPrice: 19.99,
     replyNumber: 30,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/53/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/53/1.jpg",
   },
   {
     id: 54,
@@ -730,7 +737,7 @@ const menuArray = [
     discountPrice: 99.99,
     replyNumber: 25,
     category: "Одежда",
-    images: "https://cdn.dummyjson.com/product-images/54/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/54/1.jpg",
   },
   {
     id: 55,
@@ -742,7 +749,7 @@ const menuArray = [
     discountPrice: 69.99,
     replyNumber: 35,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/55/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/55/1.jpg",
   },
   {
     id: 56,
@@ -754,7 +761,7 @@ const menuArray = [
     discountPrice: 29.99,
     replyNumber: 28,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/56/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/56/1.jpg",
   },
   {
     id: 57,
@@ -766,7 +773,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 20,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/57/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/57/1.jpg",
   },
   {
     id: 58,
@@ -778,7 +785,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 26,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/58/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/58/1.jpg",
   },
   {
     id: 59,
@@ -790,7 +797,7 @@ const menuArray = [
     discountPrice: 79.99,
     replyNumber: 22,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/59/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/59/1.jpg",
   },
   {
     id: 60,
@@ -802,7 +809,7 @@ const menuArray = [
     discountPrice: 14.99,
     replyNumber: 18,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/60/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/60/1.jpg",
   },
   {
     id: 61,
@@ -814,7 +821,7 @@ const menuArray = [
     discountPrice: 59.99,
     replyNumber: 30,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/61/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/61/1.jpg",
   },
   {
     id: 62,
@@ -826,7 +833,7 @@ const menuArray = [
     discountPrice: 24.99,
     replyNumber: 23,
     category: "Одежда",
-    images: "https://cdn.dummyjson.com/product-images/62/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/62/1.jpg",
   },
   {
     id: 63,
@@ -838,7 +845,7 @@ const menuArray = [
     discountPrice: 49.99,
     replyNumber: 28,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/63/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/63/1.jpg",
   },
   {
     id: 64,
@@ -850,7 +857,7 @@ const menuArray = [
     discountPrice: 19.99,
     replyNumber: 21,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/64/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/64/1.jpg",
   },
 
   {
@@ -863,7 +870,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 35,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/65/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/65/1.jpg",
   },
   {
     id: 66,
@@ -875,7 +882,7 @@ const menuArray = [
     discountPrice: 89.99,
     replyNumber: 26,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/66/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/66/1.jpg",
   },
   {
     id: 67,
@@ -887,7 +894,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 19,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/67/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/67/1.jpg",
   },
   {
     id: 68,
@@ -899,7 +906,7 @@ const menuArray = [
     discountPrice: 59.99,
     replyNumber: 31,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/68/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/68/1.jpg",
   },
   {
     id: 69,
@@ -911,7 +918,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 24,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/69/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/69/1.jpg",
   },
 
   {
@@ -924,7 +931,7 @@ const menuArray = [
     discountPrice: 29.99,
     replyNumber: 29,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/70/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/70/1.jpg",
   },
   {
     id: 71,
@@ -936,7 +943,7 @@ const menuArray = [
     discountPrice: 79.99,
     replyNumber: 27,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/71/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/71/1.jpg",
   },
   {
     id: 72,
@@ -948,7 +955,7 @@ const menuArray = [
     discountPrice: 17.99,
     replyNumber: 22,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/72/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/72/1.jpg",
   },
   {
     id: 73,
@@ -960,7 +967,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 33,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/73/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/73/1.jpg",
   },
   {
     id: 74,
@@ -972,7 +979,7 @@ const menuArray = [
     discountPrice: 24.99,
     replyNumber: 25,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/74/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/74/1.jpg",
   },
   {
     id: 75,
@@ -984,7 +991,7 @@ const menuArray = [
     discountPrice: 49.99,
     replyNumber: 28,
     category: "Одежда",
-    images: "https://cdn.dummyjson.com/product-images/75/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/75/1.jpg",
   },
   {
     id: 76,
@@ -996,7 +1003,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 20,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/76/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/76/1.jpg",
   },
   {
     id: 77,
@@ -1008,7 +1015,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/77/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/77/1.jpg",
   },
   {
     id: 78,
@@ -1020,7 +1027,7 @@ const menuArray = [
     discountPrice: 69.99,
     replyNumber: 32,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/78/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/78/1.jpg",
   },
   {
     id: 79,
@@ -1032,7 +1039,7 @@ const menuArray = [
     discountPrice: 59.99,
     replyNumber: 26,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/79/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/79/1.jpg",
   },
   {
     id: 80,
@@ -1044,7 +1051,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 19,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/80/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/80/1.jpg",
   },
   {
     id: 81,
@@ -1056,7 +1063,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 24,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/81/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/81/1.jpg",
   },
   {
     id: 82,
@@ -1068,7 +1075,7 @@ const menuArray = [
     discountPrice: 27.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/82/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/82/1.jpg",
   },
   {
     id: 83,
@@ -1080,7 +1087,7 @@ const menuArray = [
     discountPrice: 16.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/83/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/83/1.jpg",
   },
   {
     id: 84,
@@ -1092,7 +1099,7 @@ const menuArray = [
     discountPrice: 89.99,
     replyNumber: 28,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/84/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/84/1.jpg",
   },
   {
     id: 85,
@@ -1104,7 +1111,7 @@ const menuArray = [
     discountPrice: 54.99,
     replyNumber: 22,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/85/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/85/1.jpg",
   },
   {
     id: 86,
@@ -1116,7 +1123,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 25,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/86/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/86/1.jpg",
   },
   {
     id: 87,
@@ -1128,7 +1135,7 @@ const menuArray = [
     discountPrice: 19.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/87/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/87/1.jpg",
   },
   {
     id: 88,
@@ -1140,7 +1147,7 @@ const menuArray = [
     discountPrice: 29.99,
     replyNumber: 31,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/88/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/88/1.jpg",
   },
   {
     id: 89,
@@ -1152,7 +1159,7 @@ const menuArray = [
     discountPrice: 49.99,
     replyNumber: 27,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/89/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/89/1.jpg",
   },
   {
     id: 90,
@@ -1164,7 +1171,7 @@ const menuArray = [
     discountPrice: 32.99,
     replyNumber: 20,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/90/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/90/1.jpg",
   },
 
   {
@@ -1177,7 +1184,7 @@ const menuArray = [
     discountPrice: 24.99,
     replyNumber: 25,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/91/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/91/1.jpg",
   },
   {
     id: 92,
@@ -1189,7 +1196,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/92/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/92/1.jpg",
   },
   {
     id: 93,
@@ -1201,7 +1208,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/93/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/93/1.jpg",
   },
   {
     id: 94,
@@ -1213,7 +1220,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 28,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/94/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/94/1.jpg",
   },
   {
     id: 95,
@@ -1225,7 +1232,7 @@ const menuArray = [
     discountPrice: 27.99,
     replyNumber: 22,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/95/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/95/1.jpg",
   },
   {
     id: 96,
@@ -1237,7 +1244,7 @@ const menuArray = [
     discountPrice: 54.99,
     replyNumber: 26,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/96/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/96/1.jpg",
   },
   {
     id: 97,
@@ -1249,7 +1256,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 19,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/97/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/97/1.jpg",
   },
   {
     id: 98,
@@ -1261,7 +1268,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/98/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/98/1.jpg",
   },
   {
     id: 99,
@@ -1273,7 +1280,7 @@ const menuArray = [
     discountPrice: 69.99,
     replyNumber: 32,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/99/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/99/1.jpg",
   },
   {
     id: 100,
@@ -1285,7 +1292,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 24,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/100/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/100/1.jpg",
   },
   {
     id: 101,
@@ -1297,7 +1304,7 @@ const menuArray = [
     discountPrice: 29.99,
     replyNumber: 25,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/101/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/101/1.jpg",
   },
   {
     id: 102,
@@ -1309,7 +1316,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/102/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/102/1.jpg",
   },
   {
     id: 103,
@@ -1321,7 +1328,7 @@ const menuArray = [
     discountPrice: 24.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/103/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/103/1.jpg",
   },
   {
     id: 104,
@@ -1333,7 +1340,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 28,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/104/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/104/1.jpg",
   },
   {
     id: 105,
@@ -1345,7 +1352,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 22,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/105/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/105/1.jpg",
   },
   {
     id: 106,
@@ -1357,7 +1364,7 @@ const menuArray = [
     discountPrice: 54.99,
     replyNumber: 26,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/106/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/106/1.jpg",
   },
   {
     id: 107,
@@ -1369,7 +1376,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 19,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/107/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/107/1.jpg",
   },
   {
     id: 108,
@@ -1381,7 +1388,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/108/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/108/1.jpg",
   },
   {
     id: 109,
@@ -1393,7 +1400,7 @@ const menuArray = [
     discountPrice: 49.99,
     replyNumber: 27,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/109/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/109/1.jpg",
   },
   {
     id: 110,
@@ -1405,7 +1412,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 24,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/110/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/110/1.jpg",
   },
 
   {
@@ -1418,7 +1425,7 @@ const menuArray = [
     discountPrice: 59.99,
     replyNumber: 25,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/111/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/111/1.jpg",
   },
   {
     id: 112,
@@ -1430,7 +1437,7 @@ const menuArray = [
     discountPrice: 27.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/112/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/112/1.jpg",
   },
   {
     id: 113,
@@ -1442,7 +1449,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/113/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/113/1.jpg",
   },
   {
     id: 114,
@@ -1454,7 +1461,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 28,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/114/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/114/1.jpg",
   },
   {
     id: 115,
@@ -1466,7 +1473,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 22,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/115/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/115/1.jpg",
   },
   {
     id: 116,
@@ -1478,7 +1485,7 @@ const menuArray = [
     discountPrice: 54.99,
     replyNumber: 26,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/116/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/116/1.jpg",
   },
   {
     id: 117,
@@ -1490,7 +1497,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 19,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/117/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/117/1.jpg",
   },
   {
     id: 118,
@@ -1502,7 +1509,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/118/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/118/1.jpg",
   },
   {
     id: 119,
@@ -1514,7 +1521,7 @@ const menuArray = [
     discountPrice: 69.99,
     replyNumber: 32,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/119/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/119/1.jpg",
   },
   {
     id: 120,
@@ -1526,7 +1533,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 24,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/120/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/120/1.jpg",
   },
 
   {
@@ -1539,7 +1546,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 25,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/121/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/121/1.jpg",
   },
   {
     id: 122,
@@ -1551,7 +1558,7 @@ const menuArray = [
     discountPrice: 27.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/122/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/122/1.jpg",
   },
   {
     id: 123,
@@ -1563,7 +1570,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/123/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/123/1.jpg",
   },
   {
     id: 124,
@@ -1575,7 +1582,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 28,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/124/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/124/1.jpg",
   },
   {
     id: 125,
@@ -1587,7 +1594,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 22,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/125/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/125/1.jpg",
   },
   {
     id: 126,
@@ -1599,7 +1606,7 @@ const menuArray = [
     discountPrice: 54.99,
     replyNumber: 26,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/126/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/126/1.jpg",
   },
   {
     id: 127,
@@ -1611,7 +1618,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 19,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/127/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/127/1.jpg",
   },
   {
     id: 128,
@@ -1623,7 +1630,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/128/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/128/1.jpg",
   },
   {
     id: 129,
@@ -1635,7 +1642,7 @@ const menuArray = [
     discountPrice: 69.99,
     replyNumber: 32,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/129/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/129/1.jpg",
   },
   {
     id: 130,
@@ -1647,7 +1654,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 24,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/130/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/130/1.jpg",
   },
   {
     id: 131,
@@ -1659,7 +1666,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 25,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/131/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/131/1.jpg",
   },
   {
     id: 132,
@@ -1671,7 +1678,7 @@ const menuArray = [
     discountPrice: 27.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/132/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/132/1.jpg",
   },
   {
     id: 133,
@@ -1683,7 +1690,7 @@ const menuArray = [
     discountPrice: 12.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/133/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/133/1.jpg",
   },
   {
     id: 134,
@@ -1695,7 +1702,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 28,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/134/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/134/1.jpg",
   },
   {
     id: 135,
@@ -1707,7 +1714,7 @@ const menuArray = [
     discountPrice: 24.99,
     replyNumber: 22,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/135/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/135/1.jpg",
   },
   {
     id: 136,
@@ -1719,7 +1726,7 @@ const menuArray = [
     discountPrice: 29.99,
     replyNumber: 26,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/136/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/136/1.jpg",
   },
   {
     id: 137,
@@ -1731,7 +1738,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 27,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/137/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/137/1.jpg",
   },
   {
     id: 138,
@@ -1743,7 +1750,7 @@ const menuArray = [
     discountPrice: 15.99,
     replyNumber: 24,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/138/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/138/1.jpg",
   },
   {
     id: 139,
@@ -1755,7 +1762,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/139/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/139/1.jpg",
   },
   {
     id: 140,
@@ -1767,7 +1774,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 30,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/140/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/140/1.jpg",
   },
   {
     id: 141,
@@ -1779,7 +1786,7 @@ const menuArray = [
     discountPrice: 12.99,
     replyNumber: 19,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/141/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/141/1.jpg",
   },
   {
     id: 142,
@@ -1791,7 +1798,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/142/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/142/1.jpg",
   },
   {
     id: 143,
@@ -1803,7 +1810,7 @@ const menuArray = [
     discountPrice: 9.99,
     replyNumber: 24,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/143/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/143/1.jpg",
   },
   {
     id: 144,
@@ -1815,7 +1822,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 27,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/144/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/144/1.jpg",
   },
   {
     id: 145,
@@ -1827,7 +1834,7 @@ const menuArray = [
     discountPrice: 18.99,
     replyNumber: 22,
     category: "Бытовая техника",
-    images: "https://cdn.dummyjson.com/product-images/145/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/145/1.jpg",
   },
   {
     id: 146,
@@ -1839,7 +1846,7 @@ const menuArray = [
     discountPrice: 34.99,
     replyNumber: 28,
     category: "Здоровье",
-    images: "https://cdn.dummyjson.com/product-images/146/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/146/1.jpg",
   },
   {
     id: 147,
@@ -1851,7 +1858,7 @@ const menuArray = [
     discountPrice: 27.99,
     replyNumber: 18,
     category: "Аксессуары",
-    images: "https://cdn.dummyjson.com/product-images/147/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/147/1.jpg",
   },
   {
     id: 148,
@@ -1863,7 +1870,7 @@ const menuArray = [
     discountPrice: 21.99,
     replyNumber: 23,
     category: "Красота и уход",
-    images: "https://cdn.dummyjson.com/product-images/148/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/148/1.jpg",
   },
   {
     id: 149,
@@ -1875,7 +1882,7 @@ const menuArray = [
     discountPrice: 39.99,
     replyNumber: 27,
     category: "Электроника",
-    images: "https://cdn.dummyjson.com/product-images/149/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/149/1.jpg",
   },
   {
     id: 150,
@@ -1887,7 +1894,7 @@ const menuArray = [
     discountPrice: 59.99,
     replyNumber: 22,
     category: "Обувь",
-    images: "https://cdn.dummyjson.com/product-images/150/1.jpg",
+    image: "https://cdn.dummyjson.com/product-images/150/1.jpg",
   },
 ];
 

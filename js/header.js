@@ -1,4 +1,4 @@
-import { menuArray, get } from "./utilis.js";
+import { menuArray, get, getStorageItems} from "./utilis.js";
 
 window.addEventListener("DOMContentLoaded", (e) => {
     e.preventDefault();
@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
     let headerShadow = get(".header__shadow")
     let selectDefault = get(".product__default")
     let selectX = get(".selectX")
+    let headerUser = get(".header__user-name")
    
 
 
@@ -170,8 +171,17 @@ window.addEventListener("DOMContentLoaded", (e) => {
 }
 
 
+let localKey = "user"
 
-  
+let  localStore = getStorageItems(localKey)
+
+console.log(localStore);
+headerUser.textContent = localStore.username
+
+
+
+
+
 });
 
 

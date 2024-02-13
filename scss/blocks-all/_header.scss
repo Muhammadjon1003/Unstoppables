@@ -79,6 +79,10 @@
     font-size: 14px;
   }
 
+  .header__user-name{
+    text-transform: capitalize;
+  }
+
   .header__list li {
     display: flex;
     align-items: center;

@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
                         </div>
                     </a>
-                    <button class="cart_icon"><img src="./images/shopping-bag.png" alt=""></button>
+                    <button class="cart_icon"><img src="../assets/icons/shopping-bag.png" alt=""></button>
                 </div>
             `;
         
@@ -263,10 +263,10 @@ document.addEventListener('DOMContentLoaded', function() {
       likeIcon.addEventListener('click', function(event) {
           event.stopPropagation();
           if(!isliked){
-            likeIcon.style.backgroundImage = "url('./images/red_like_icon.svg')";
+            likeIcon.style.backgroundImage = "url('../assets/icons/red_like_icon.svg')";
             isliked = true
           }else{
-            likeIcon.style.backgroundImage = "url('./images/like_icon.svg')";
+            likeIcon.style.backgroundImage = "url('../assets/icons/like_icon.svg')";
             isliked = false
           }
       });

@@ -67,8 +67,13 @@ main{
         text-decoration: none;
     }
 }
+.image{
+    width: 95%;
+    height: 100%;
+    padding: 20px 0px;
+}
 .product{
-    width: 224px;
+    width: 220px;
     margin: 10px 0px;
     @extend %display;
     // border: solid 1px;

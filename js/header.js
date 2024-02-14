@@ -17,14 +17,89 @@ window.addEventListener("DOMContentLoaded", (e) => {
     let selectDefault = get(".product__default")
     let selectX = get(".selectX")
     let headerUser = get(".header__user-name")
-   
+    let srchInp = get("#srchInp")
+   let srchBtn = get(".srchBtn")
+   const resultContainer = document.getElementById("resultContainer");
 
 
-    let display = menuArray
-        .map((item, index) => {
-            let { category } = item;
+srchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-            if (index < 9) {
+    // Get the value from the input field
+    const searchTerm = srchInp.value.toLowerCase().trim();
+
+    // Filter menuArray based on the first word of the title
+    const filteredItems = menuArray.filter((item) => {
+        const firstWord = item.title.split(" ")[0].toLowerCase();
+        return firstWord.includes(searchTerm);
+    });
+
+    // Display the filtered items
+    displayResults(filteredItems);
+});
+
+function displayResults(items) {
+    resultContainer.innerHTML = "";
+
+    items.forEach((item) => {
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        }
+
+        function formatDiscountPrice(discountPrice) {
+            return discountPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        }
+
+        const { id, title, price, rating, image, discountPrice } = item;
+
+        let random = parseInt(Math.random() * 2000);
+
+        const itemElement = document.createElement("div");
+        itemElement.innerHTML = `
+            <div class="product" class="product__main-box" id="${id}">
+                <button class="like_icon">
+                    <img src="./images/like_icon.svg" alt="like it">
+                </button>
+                <a href="./single.html?id=${id}">
+                    <div class="product_image">
+                        <img src="${image}" alt="">
+                    </div>
+                    <div class="product_description">
+                        <div class="product_desc">
+                            <div class="product_title"><p class="product_title">${title}</p></div>
+                            <div class="product_rating">
+                                <span class="fa-solid fa-star star_rating fa-xs" style="color: #FFD43B;"></span>
+                                <p>${rating}</p>
+                                <p>(${random} отзывов)</p>
+                            </div>
+                            <div class="product_monthly_price">
+                                <p>${parseInt(discountPrice * 1000 / 6)} сум/мес</p>
+                            </div>
+                            <div class="product_price">
+                                <div class="product_price_desc">
+                                    <p class="first_price">${formatPrice(price * 1000)} сум</p>
+                                    <p class="discount_price">${formatDiscountPrice(discountPrice * 1000)} сум</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <button class="cart_icon" id="${id}"><img src="./images/shopping-bag.png" alt=""></button>
+            </div>
+        `;
+
+        resultContainer.appendChild(itemElement);
+    });
+}
+
+
+
+    let display = menuArray.map((item, index) => {
+        let { category } = item;
+        
+       
+       
+            if (index < 8) {
                 return `
                 <ul class="header__link-list">
                     <li class="header__list-item">
@@ -38,8 +113,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
                     </li>
                 </ul>`;
             }
-        })
-        .join("");
+        
+    }).join("");
+    
+    
 
     mainBox.innerHTML += display;
 
@@ -55,7 +132,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
     let headerListItems = document.querySelectorAll(".header__list-item");
 
-    let mouseOverTimeout;
+    let mouseOverTimeout = null;
     let currentClickedItem = null;
 
     function toggleMenu() {
@@ -68,6 +145,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
       
             selectDefault.classList.remove("open");
             selectDefault.classList.add("hidden");
+
       
             headerBottomLinks.classList.add("open");
             otherText.style.display = "none";
@@ -113,39 +191,38 @@ window.addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
         toggleMenu();
     });
-    
 
-    function updateEventListeners() {
-      headerListItems.forEach((item) => {
-          item.addEventListener("click", () => handleItemClick(item));
-          item.addEventListener("mouseover", () => handleMouseOver(item));
-      });
-  }
-  
-  function handleItemClick(item) {
-      clearTimeout(mouseOverTimeout);
-      if (currentClickedItem) {
-          currentClickedItem.classList.remove("clicked");
-      }
-  
-      currentClickedItem = item;
-  
-      item.classList.add("clicked");
-  
-      displayProducts(item.textContent.trim());
-  }
-  
-  function handleMouseOver(item) {
-      clearTimeout(mouseOverTimeout);
-  
-      if (!currentClickedItem) {
-          mouseOverTimeout = setTimeout(() => {
-              displayProducts(item.textContent.trim());
-          }, 2000);
-      }
-  }
-  
-  function displayProducts(category) {
+function updateEventListeners() {
+    headerListItems.forEach((item) => {
+        item.addEventListener("click", () => handleItemClick(item));
+        item.addEventListener("mouseover", () => handleMouseOver(item));
+    });
+}
+
+function handleItemClick(item) {
+    clearTimeout(mouseOverTimeout);
+    
+    if (currentClickedItem) {
+        currentClickedItem.classList.remove("clicked");
+    }
+
+    currentClickedItem = item;
+    item.classList.add("clicked");
+
+    displayProducts(item.textContent.trim());
+}
+
+function handleMouseOver(item) {
+    clearTimeout(mouseOverTimeout);
+
+    if (!currentClickedItem) {
+        mouseOverTimeout = setTimeout(() => {
+            displayProducts(item.textContent.trim());
+        }, 2000);
+    }
+}
+
+function displayProducts(category) {
     let displayProducts = menuArray
         .filter((data) => {
             return (
@@ -156,7 +233,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
         .map((data) => {
             return `
                 <li>
-                    <a class="bottom__hover-link" href="">${data.title.split(" ")[0]} ${data.title.split(" ")[1]}</a>
+                    <a class="bottom__hover-link" href="./single.html?id=${data.id}">${data.title.split(" ")[0]} ${data.title.split(" ")[1]}</a>
                 </li>
             `;
         })
@@ -169,6 +246,9 @@ window.addEventListener("DOMContentLoaded", (e) => {
         </div>
     `;
 }
+
+updateEventListeners();
+displayProducts(headerListItems[0].textContent.trim());
 
 
 let localKey = "user"

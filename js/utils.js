@@ -7,7 +7,7 @@ const fetchProducts = async (url) => {
     console.error("An error occurred during the fetch:", error);
   }
 };
-
+let isliked = false
 function get(item) {
   if (document.querySelector(item)) {
     return document.querySelector(item);
@@ -29,14 +29,18 @@ function addUserItemToStorage(id, email, username, password) {
   localStorage.setItem('user', JSON.stringify(item));
 }
 
-function addItemToStorage(id, key) {
-  const liked = { id };
-  const likes = getStorageItems(key);
-  const existingItem = likes.find((product) => product.id === id);
+function addItemToStorage(productID, key) {
+  const likes = getStorageItems(key) || []
+  const { id } = likes;
+  const existingItem = likes.find((product) => product.id === productID)
+  const comingitem = menuArray.find((item) => item.id === productID);
 
   if (!existingItem) {
-    likes.push(liked);
+    likes.push(comingitem);
     localStorage.setItem(key, JSON.stringify(likes));
+    isliked = true
+  }else{
+    console.log('there is no product with ID', id);
   }
 }
 
@@ -46,6 +50,7 @@ function removeItemFromStorage(id, key) {
   const likes = getStorageItems(key);
   const updatedLikes = likes.filter((item) => item.id !== id);
   localStorage.setItem(key, JSON.stringify(updatedLikes));
+  isliked = false
 }
 
 const menuArray = [
@@ -1898,10 +1903,23 @@ const menuArray = [
     image: "https://cdn.dummyjson.com/product-images/150/1.jpg",
   },
 ];
-
+menuArray.forEach(item=>{
+  let category = item.category
+  let array =[]
+  if (typeof category === 'string') {
+    array.push(category)
+    array.push("Все")
+    item.category = array
+} else if (Array.isArray(category)) {
+   category.push("Все")
+} else {
+    console.log("Invalid category format");
+}
+})
 export {
   fetchProducts,
   get,
+  isliked,
   menuArray,
   getStorageItems,
   addUserItemToStorage,

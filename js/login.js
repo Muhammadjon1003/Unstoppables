@@ -1,6 +1,6 @@
-import { addUserItemToStorage, get } from "./utilis.js";
+import { addUserItemToStorage, get } from "./utils.js";
 
-let emailInp = get("#email-input");
+// let emailInp = get("#email-input");
 let usernameInp = get("#username-input");
 let passwordInp = get("#password-input");
 let passwordBtn = get(".password-btn");

@@ -17,6 +17,8 @@ function displayModal(productId){
     let modalProductAmt = document.querySelector(".modal-amt-product");
     let modalProductRemove = document.querySelector(".modal-amt-minus");
     let modalProductAdd = document.querySelector(".modal-amt-plus");
+    let currency = document.querySelector(".currency");
+    let informationBtn = document.querySelector(".information-btn");
 
     modalElement.style.display = "block";
     modalImg.src = product.image;
@@ -24,6 +26,7 @@ function displayModal(productId){
     modalColorImg.src = product.image;
     modalPrice.textContent = formatPrice(product.price * 1000) + " сум";
     modalProductAmt.value = 1;
+    currency.textContent = parseInt(product.discountPrice * 1000 / 6)
 
     modalProductRemove.addEventListener('click', function(){
         let currentValue = parseInt(modalProductAmt.value);
@@ -40,6 +43,10 @@ function displayModal(productId){
         modalPrice.textContent = formatPrice(product.price * 1000 * currentValue) + " сум";
         modalProductAmt.value = currentValue;
     });
+
+    informationBtn.addEventListener('click', function(){
+        location.href = "singlePage.html";
+    })
     
     function formatPrice(price) {
         return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");

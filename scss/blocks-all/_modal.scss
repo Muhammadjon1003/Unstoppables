@@ -55,6 +55,27 @@
             }
             .modal-amt{
                 display: flex;
+                width: 114px;
+                border: 1px solid gray;
+                border-radius: 3px;
+                &-minus{
+                    width: 38px;
+                    height: 38px;
+                    background: none;
+                    border: none;
+                }
+                &-product{
+                    width: 38px;
+                    height: 38px;
+                    text-align: center;
+                    border: none;
+                }
+                &-plus{
+                    width: 38px;
+                    height: 38px;
+                    background: none;
+                    border: none;
+                }
             }
             .basket-btn{
                 width: 100%;

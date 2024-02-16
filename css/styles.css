@@ -1007,6 +1007,27 @@ main {
 }
 .modal-content-right .modal-amt {
   display: flex;
+  width: 114px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.modal-content-right .modal-amt-minus {
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+}
+.modal-content-right .modal-amt-product {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  border: none;
+}
+.modal-content-right .modal-amt-plus {
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
 }
 .modal-content-right .basket-btn {
   width: 100%;

@@ -15,31 +15,32 @@ function displayModal(productId){
     let modalPrice = document.querySelector(".modal-price");
     let modalColorImg = document.querySelector(".modal-color-img");
     let modalProductAmt = document.querySelector(".modal-amt-product");
-    let modalProductRemove = document.querySelector(".fa-solid .fa-minus");
-    let modalProductAdd = document.querySelector(".fa-solid .fa-plus");
+    let modalProductRemove = document.querySelector(".modal-amt-minus");
+    let modalProductAdd = document.querySelector(".modal-amt-plus");
 
     modalElement.style.display = "block";
-    modalImg.src  = product.image;
+    modalImg.src = product.image;
     modalTitle.textContent = product.title;
     modalColorImg.src = product.image;
-    modalPrice.textContent = formatPrice(product.price * 1000);
-    modalProductAmt.textContent = 1;
+    modalPrice.textContent = formatPrice(product.price * 1000) + " сум";
+    modalProductAmt.value = 1;
 
-    // modalProductRemove.addEventListener('click', function(){
-    //     let currentValue = parseInt(modalProductAmt.textContent);
-    //     if (currentValue > 1) {
-    //         currentValue -= 1;
-    //         modalProductAmt.textContent = currentValue;
-    //     }
-    // });
+    modalProductRemove.addEventListener('click', function(){
+        let currentValue = parseInt(modalProductAmt.value);
+        if (currentValue > 1) {
+            currentValue -= 1;
+            modalPrice.textContent = formatPrice(product.price * 1000 * currentValue) + " сум";
+            modalProductAmt.value = currentValue;
+        }
+    });
     
-    // modalProductAdd.addEventListener('click', function(){
-    //     let currentValue = parseInt(modalProductAmt.textContent);
-    //     currentValue += 1;
-    //     modalProductAmt.textContent = currentValue;
-    // });
+    modalProductAdd.addEventListener('click', function(){
+        let currentValue = parseInt(modalProductAmt.value);
+        currentValue += 1;
+        modalPrice.textContent = formatPrice(product.price * 1000 * currentValue) + " сум";
+        modalProductAmt.value = currentValue;
+    });
     
-
     function formatPrice(price) {
         return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }

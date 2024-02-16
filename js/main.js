@@ -5,6 +5,7 @@ let electronicsDiv = document.querySelector(".electronicsDiv")
 let technicDiv = document.querySelector(".technicDiv")
 let clothesDiv = document.querySelector(".clothesDiv")
  function displayProducts(categoryOfProduct,productDiv,startIndex,productsNumber){
+
         let newArray = []
     menuArray.map(item =>{
         const {category} = item
@@ -26,7 +27,7 @@ let clothesDiv = document.querySelector(".clothesDiv")
             newArray.push(item)
         }
     })
-    console.log(newArray);
+    // console.log(newArray);
         let endIndex = startIndex + productsNumber
         let productsPerPage =newArray.slice(startIndex, endIndex)
         const fragment = document.createDocumentFragment();
@@ -77,14 +78,23 @@ let clothesDiv = document.querySelector(".clothesDiv")
     
       // Attach event listener to the like icon within the current product
       const likeIcon = tempDiv.querySelector('.like_icon');
+      const cartIcon = tempDiv.querySelector('.cart_icon');
+      let likeCount = get('.likes__count')
+      let basketCount = get('.basket__count')
       likeIcon.addEventListener('click', function(event) {
           event.stopPropagation();
           if(!isliked){
             likeIcon.style.backgroundImage = "url('../assets/icons/red_like_icon.svg')";
             addItemToStorage(id, "likes")
+            let likes = getStorageItems('likes')
+            let count1 = likes.length
+            likeCount.innerText = count1
           }else{
             likeIcon.style.backgroundImage = "url('../assets/icons/like_icon.svg')";
             removeItemFromStorage(id, 'likes')
+            let likes = getStorageItems('likes')
+            let count1 = likes.length
+            likeCount.innerText = count1      
           }
       });
     

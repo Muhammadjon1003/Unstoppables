@@ -1,4 +1,4 @@
-import { menuArray, get,isliked, getStorageItems, addItemToStorage, removeItemFromStorage} from "./utils.js";
+import { menuArray, get, getStorageItems,} from "./utils.js";
 export function header(){
     window.addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
@@ -20,8 +20,14 @@ export function header(){
         let srchInp = get("#srchInp")
        let srchBtn = get(".srchBtn")
        const resultContainer = document.getElementById("resultContainer");
-    
-    
+      let likeCount = get('.likes__count')
+      let basketCount = get('.basket__count')
+       let likes = getStorageItems('likes')
+       let baskets = getStorageItems('basket')
+       let count1 = likes.length
+       let count2 = baskets.length
+       likeCount.innerText = count1 
+       basketCount.innerText = count2
     srchBtn.addEventListener("click", (e) => {
         e.preventDefault();
     

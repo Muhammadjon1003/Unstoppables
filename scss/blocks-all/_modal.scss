@@ -38,14 +38,14 @@
             height: 100%;
             .modal-title{
                 color: $text-primaty;
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: 400;
                 line-height: 28px;
                 margin: 0;
                 font-family: "Inter", sans-serif;
             }
             hr{
-                margin-top: 20px;
+                margin-top: 40px;
             }
             h4{
                 font-weight: 500;
@@ -144,10 +144,10 @@
         .close{
             position: absolute;
             border: none;
-            padding: 8px 11px;
+            padding: 8px;
             border-radius: 50%;
-            right: 10px;
-            top: 10px;
+            right: 5px;
+            top: 5px;
             cursor: pointer;
         }
     }

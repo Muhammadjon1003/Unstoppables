@@ -1,49 +1,30 @@
 import { header } from "./header.js"
 import {footer} from "./footer.js"
+import { getStorageItems, removeItemFromStorage } from "./utils.js"
 header()
 footer()
 
- let cartStorage = [
-  {
-    id: 1,
-    title: "Парфюмерная вода Avon Incandessence Soleil, 50 мл",
-    category: ["perfume"],
-    price: 30,
-    discountprice: 50
-  },
-  {
-    id: 2,
-    title: "Парфюмерная вода Avon Incandessence Soleil, 50 мл",
-    category: ["perfume"],
-    price: 10,
-    discountprice: 50
-
-  },
-  {
-    id: 3,
-    title: "Парфюмерная вода Avon Incandessence Soleil, 50 мл",
-    category: ["perfume"],
-    price: 20,
-    discountprice: 50
-  }
-]
-
+ let cartStorage = getStorageItems('korzina')
+ function formatPrice(price) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 let cartProducts = document.querySelector('.cart_products')
 function displayProducts(){
 cartStorage.map(product =>{
-  const {id, title, price, category, discountprice} = product
+  const {id, title, price, image, category, discountPrice} = product
+  
   let producthtml = `
   <hr class="hr">
-  <div class="cart_product" id="${id}">
+  <div class="cart_product" >
     <input type="checkbox" class="checkbox">
-    <img src="https://cdn.dummyjson.com/product-images/2/1.jpg" alt="Product 3">
+    <img src="${image}" alt="Product 3">
     <div class="product_info">
       <div class="product_title">
         <p>${title}</p>
-        <button class="remove_cart"><i class="fa-solid fa-trash-can fa-lg"></i> Удалить</button>
+        <button class="remove_cart" id="${id}"><i class="fa-solid fa-trash-can fa-lg"></i> Удалить</button>
       </div>
       <div class="product_price">
-        <p>Category: ${category}</p>
+        <p>Category: ${category[0]}</p>
         <div class="product_price_count">
           <div class="product_count">
             <div class="count">
@@ -51,11 +32,11 @@ cartStorage.map(product =>{
               <span class="quantity">0</span>
               <button class="increment-btn"><i class="fa-solid fa-plus"></i></button>
             </div>
-            <p> ${price*1000} sum/per</p>
+            <p> ${formatPrice(discountPrice*1000)} сум/ед</p>
           </div>
           <div class="price">
-            <p><span class="product_price1">${price*1000} som</span></p>
-            <p><span class="product_price2">${discountprice*1000} som</span></p>
+            <p><span class="product_price1">${formatPrice(discountPrice*1000)} сум</span></p>
+            <p><span class="product_price2">${formatPrice(price*1000)} сум</span></p>
           </div>
         </div>
       </div>
@@ -81,6 +62,16 @@ document.addEventListener("DOMContentLoaded", function() {
   let regularTotalPrice = 0;
   let discountTotalPrice = 0;
   const initialCheckedState = Array.from(individualCheckboxes).map(checkbox => checkbox.checked); // Initial state of checkboxes
+  let removeButtons = document.querySelectorAll(".remove_cart")
+  removeButtons.forEach(button =>{
+    button.addEventListener('click', function(){
+      let removeId = button.id
+      removeItemFromStorage(removeId, 'korzina')
+      window.location.reload()
+    })
+  })
+  const numberOfProducts = document.querySelector("numberOfProducts");
+  numberOfProducts.textContent = cartStorage.length
 
   function calculateTotalPrice() {
       regularTotalPrice = 0;
@@ -89,16 +80,16 @@ document.addEventListener("DOMContentLoaded", function() {
       individualCheckboxes.forEach((checkbox, index) => {
           if (checkbox.checked) {
               let count = parseInt(quantities[index].textContent);
-              regularTotalPrice += parseFloat(regularPriceElements[index].textContent) * count;
-              discountTotalPrice += parseFloat(discountPriceElements[index].textContent) * count;
+              regularTotalPrice += parseFloat(regularPriceElements[index].textContent) * count*1000;
+              discountTotalPrice += parseFloat(discountPriceElements[index].textContent) * count*1000;
           }
       });
 
-      regularTotalPriceElement.textContent = regularTotalPrice.toFixed(2);
-      discountTotalPriceElement.textContent = discountTotalPrice.toFixed(2);
+      regularTotalPriceElement.textContent = formatPrice(regularTotalPrice) ;
+      discountTotalPriceElement.textContent = formatPrice(discountTotalPrice) ;
 
       let difference = discountTotalPrice - regularTotalPrice;
-      differenceOfTotals.textContent = difference.toFixed(2);
+      differenceOfTotals.textContent = formatPrice(difference) ;
   }
 
   function initializeProductListeners(index) {

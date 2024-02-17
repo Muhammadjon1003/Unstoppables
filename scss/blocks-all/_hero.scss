@@ -41,6 +41,9 @@ main{
 .discountDiv{
   @extend %productDiv;
 }
+#resultContainer{
+  @extend %productDiv;
+}
 .electronicsDiv{
     @extend %productDiv;
 }
@@ -51,7 +54,7 @@ main{
 }
 
 .hover__list{
-    flex-direction: row 
+    flex-direction: row;
 }
 .technicDiv{
     @extend %productDiv;
@@ -72,7 +75,6 @@ main{
     margin: 10px 0px;
     @extend %display;
     // border: solid 1px;
-    justify-content: start;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -119,12 +121,15 @@ main{
         cursor: pointer;
         border: none;
     }
-    .product_desc{
+ .product_desc{
         width: 100%;
-        @extend %display;
-        
+        // @extend %display;
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        align-items: start;
+        // display: none;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 10px;
     overflow: hidden;
     .product_title{
@@ -155,8 +160,9 @@ main{
     }
     .product_price{
         width: 100%;
-        @extend %display;
-        justify-content: space-between;
+        // @extend %display;
+        display: flex;
+        justify-content: flex-start;
         padding-top: 18px;
         .product_price_desc{
             @extend %display;

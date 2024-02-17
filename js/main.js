@@ -68,7 +68,7 @@ let clothesDiv = document.querySelector(".clothesDiv")
                             </div>
                         </div>
                     </a>
-                    <button class="cart_icon"><img src="../assets/icons/shopping-bag.png" alt=""></button>
+                    <button class="cart_icon" id="${id}"><img src="../assets/icons/shopping-bag.png" alt=""></button>
                 </div>
             `;
         

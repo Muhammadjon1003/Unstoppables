@@ -1,4 +1,4 @@
-import { menuArray, get, getStorageItems,} from "./utils.js";
+import { menuArray, get, getStorageItems} from "./utils.js";
 export function header(){
     window.addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
@@ -62,9 +62,9 @@ export function header(){
     
             const itemElement = document.createElement("div");
             itemElement.innerHTML = `
-                <div class="product" class="product__main-box" id="${id}">
+                <div class="product" id="${id}">
                     <button class="like_icon">
-                        <img src="./images/like_icon.svg" alt="like it">
+                        <img src="../assets/icons/like_icon.svg" alt="like it">
                     </button>
                     <a href="./single.html?id=${id}">
                         <div class="product_image">
@@ -90,7 +90,7 @@ export function header(){
                             </div>
                         </div>
                     </a>
-                    <button class="cart_icon" id="${id}"><img src="./images/shopping-bag.png" alt=""></button>
+                    <button class="cart_icon" id="${id}"><img src="../assets/icons/shopping-bag.png" alt=""></button>
                 </div>
             `;
     
@@ -261,8 +261,16 @@ export function header(){
     
     let  localStore = getStorageItems(localKey)
     
+    if(localStore.length == 0){
+    headerUser.textContent = "Войти"
+    console.log('localStore');
+    headerUser.addEventListener('click', function(){
+        window.location.href = './login.html'
+    })
+  }else{
     console.log(localStore);
     headerUser.textContent = localStore.username
+  }
     
     
     

@@ -32,8 +32,8 @@ function addUserItemToStorage(id, email, username, password) {
 function addItemToStorage(productID, key) {
   const likes = getStorageItems(key) || []
   const { id } = likes;
-  const existingItem = likes.find((product) => product.id === productID)
-  const comingitem = menuArray.find((item) => item.id === productID);
+  const existingItem = likes.find((product) => product.id == productID)
+  const comingitem = menuArray.find((item) => item.id == productID);
 
   if (!existingItem) {
     likes.push(comingitem);
@@ -48,7 +48,7 @@ function addItemToStorage(productID, key) {
 
 function removeItemFromStorage(id, key) {
   const likes = getStorageItems(key);
-  const updatedLikes = likes.filter((item) => item.id !== id);
+  const updatedLikes = likes.filter((item) => item.id != id);
   localStorage.setItem(key, JSON.stringify(updatedLikes));
   isliked = false
 }

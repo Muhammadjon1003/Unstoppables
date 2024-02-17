@@ -167,9 +167,9 @@ body::-webkit-scrollbar-thumb {
 }
 .header .basket__count, .header .likes__count {
   color: #fff;
-  padding: 0px 3px;
+  padding: 4px;
   background: #7000ff;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .header .header__bottom-wrapper {
   display: flex;

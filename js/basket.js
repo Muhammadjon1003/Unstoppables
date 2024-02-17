@@ -1,8 +1,6 @@
 import { header } from "./header.js"
-import {footer} from "./footer.js"
 import { getStorageItems, removeItemFromStorage } from "./utils.js"
 header()
-footer()
 
  let cartStorage = getStorageItems('korzina')
  function formatPrice(price) {
@@ -70,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.reload()
     })
   })
-  const numberOfProducts = document.querySelector("numberOfProducts");
+  const numberOfProducts = document.querySelector(".numberOfProducts");
   numberOfProducts.textContent = cartStorage.length
 
   function calculateTotalPrice() {

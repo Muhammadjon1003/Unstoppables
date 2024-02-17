@@ -23,7 +23,7 @@ export function header(){
       let likeCount = get('.likes__count')
       let basketCount = get('.basket__count')
        let likes = getStorageItems('likes')
-       let baskets = getStorageItems('basket')
+       let baskets = getStorageItems('korzina')
        let count1 = likes.length
        let count2 = baskets.length
        likeCount.innerText = count1 

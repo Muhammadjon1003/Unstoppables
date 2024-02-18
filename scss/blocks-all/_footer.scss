@@ -1,6 +1,6 @@
 
 .footer{
- padding: 30px;
+ padding: 15px;
  max-width: 1440px;
 
     &__top{
@@ -20,21 +20,18 @@
              }
              &-item2{
                width: 100%;
-               color: var(--text-link-neutral-rest);
+               color: $header-link-color;
                display: block;
                font-size: 12px;
                font-weight: 400;
-               line-height: 16px;
                text-decoration: none;
-                    &-img{
-                       width: 50%;
-                       padding-right: 25px;
-                       height: 28px;
-                   
-                    }
+                    
              }
              &-item2{
+              width: 100%;
                display: flex;
+               gap: 30px;
+              
              }
              &-item3{
                width: 70%;
@@ -48,6 +45,7 @@
              &-item4{
                padding-top: 35px;
                padding-bottom: 20px;
+               font-weight: 600;
              }
        }
     }
@@ -58,10 +56,10 @@
           &-left{
            width: 50%;
            display: flex;
-           padding-top: 30px;
+           padding-top: 15px;
                  &-text{
                    color: var(--text-primary);
-                   font-size: 14px;
+                   font-size: 13px;
                    font-weight: 500;
                    line-height: 18px;
                    margin-right: 16px;
@@ -73,7 +71,8 @@
            width: 50%;
            display: flex;
            justify-content:flex-end;
-           padding-top: 30px;
+           padding-top: 15px;
+           font-size: 12px;
            opacity: 0.6;
           }
     }

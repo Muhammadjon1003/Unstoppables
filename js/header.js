@@ -111,7 +111,7 @@ export function header(){
                         <li class="header__list-item">
                             <div>
                                 <i class="product__icon fa-solid fa-shop"></i>
-                                <a class="header__link" href="">
+                                <a class="header__link" href="./headerFullSingle.html?category=${category[0]}">
                                     ${category[0]}
                                 </a>
                             </div>

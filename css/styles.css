@@ -9,6 +9,12 @@
 @font-face {
   font-display: swap;
   font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  /* Additional font properties can be specified here if needed */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/inter-v13-latin-500.woff2") format("woff2");
@@ -38,6 +44,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 0px 15px;
+  font-family: sans-serif;
 }
 
 * {
@@ -243,7 +250,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 12px;
   transition: all 0.3s ease;
 }
 .header .header__bottom-wrapper.open .header__bottom-links {
@@ -586,10 +593,6 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("../inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-}
 * {
   margin: 0;
   padding: 0;

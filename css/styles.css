@@ -584,7 +584,7 @@ body::-webkit-scrollbar-thumb {
   right: 10px;
 }
 
-.show_more, .product .cart_icon, .product .product_price .product_price_desc, .product .product_price, .product .product_desc .product_rating, .product .product_desc, .product .like_icon, .product .product_image, .product, .likesDiv, .clothesDiv, .technicDiv, .singlePage__main-box, .electronicsDiv, .discountDiv, #resultContainer, .date, .current_price, .total_price, .delivery_time, .all_checkbox, .navbar, .price, .count, .product_price_count, .product_price, .product_title, .cart_product, .basketDiv {
+.date, .current_price, .total_price, .delivery_time, .all_checkbox, .navbar, .price, .count, .product_price_count, .cart_product_price, .cart_product_title, .cart_product, .basketDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -635,21 +635,21 @@ body::-webkit-scrollbar-thumb {
   padding-left: 5px;
 }
 
-.product_info {
+.cart_product_info {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.product_title {
+.cart_product_title {
   justify-content: space-between;
 }
-.product_title p {
+.cart_product_title p {
   font-size: 18px;
   max-width: 350px;
 }
-.product_title button {
+.cart_product_title button {
   width: 104px;
   height: 24px;
   background: transparent;
@@ -658,11 +658,11 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
   color: #717171;
 }
-.product_title button:hover {
+.cart_product_title button:hover {
   color: #020202;
 }
 
-.product_price {
+.cart_product_price {
   justify-content: space-between;
 }
 
@@ -687,6 +687,7 @@ body::-webkit-scrollbar-thumb {
   height: 30px;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .price {
@@ -798,7 +799,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-.show_more, .product .cart_icon, .product .product_price .product_price_desc, .product .product_price, .product .product_desc .product_rating, .product .product_desc, .product .like_icon, .product .product_image, .product, .likesDiv, .clothesDiv, .technicDiv, .singlePage__main-box, .electronicsDiv, .discountDiv, #resultContainer, .basketDiv, .cart_product, .product_title, .product_price, .product_price_count, .count, .price, .navbar, .all_checkbox, .delivery_time, .total_price, .current_price, .date {
+.show_more, .product .cart_icon, .product .product_price .product_price_desc, .product .product_price, .product .product_desc .product_rating, .product .product_desc, .product .like_icon, .product .product_image, .product, .likesDiv, .clothesDiv, .technicDiv, .singlePage__main-box, .electronicsDiv, .discountDiv, #resultContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

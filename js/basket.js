@@ -16,12 +16,12 @@ cartStorage.map(product =>{
   <div class="cart_product" >
     <input type="checkbox" class="checkbox">
     <img src="${image}" alt="Product 3">
-    <div class="product_info">
-      <div class="product_title">
+    <div class="cart_product_info">
+      <div class="cart_product_title">
         <p>${title}</p>
         <button class="remove_cart" id="${id}"><i class="fa-solid fa-trash-can fa-lg"></i> Удалить</button>
       </div>
-      <div class="product_price">
+      <div class="cart_product_price">
         <p>Category: ${category[0]}</p>
         <div class="product_price_count">
           <div class="product_count">

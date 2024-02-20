@@ -115,6 +115,7 @@
   .basket__count, .likes__count {
     color: #fff;
     padding: 4px;
+    font-size: 12px;
     background: $header-select-color;
     border-radius: 4px;
   }
@@ -146,7 +147,7 @@
 
   .header__bottom-wrapper.open .header__shadow {
     box-shadow: 0px 12px 22px 9px rgba(34, 60, 80, 0.2);
-    transition: all 0.3s ease; /* Add a transition to all properties */
+    transition: all 0.3s ease;
   }
 
   .header__bottom-inner {

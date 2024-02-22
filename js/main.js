@@ -1,4 +1,4 @@
-import { menuArray, get,isliked, getStorageItems, addItemToStorage, removeItemFromStorage} from "./utils.js";
+import { menuArray, get,addToCart, likeBg,} from "./utils.js";
 export function main(){
     let discountDiv = document.querySelector(".discountDiv")
 let electronicsDiv = document.querySelector(".electronicsDiv")
@@ -42,7 +42,7 @@ let clothesDiv = document.querySelector(".clothesDiv")
            
             let random = parseInt(Math.random() * 2000);
             let productHTML = `
-                <div class="product">
+                <div class="product" id="${id}">
                     <button class="like_icon"></button>
                     <a href="./single.html?id=${id}">
                         <div class="product_image">
@@ -68,7 +68,7 @@ let clothesDiv = document.querySelector(".clothesDiv")
                             </div>
                         </div>
                     </a>
-                    <button class="cart_icon" id="${id}"><img src="../assets/icons/shopping-bag.png" alt=""></button>
+                    <button class="cart_icon"><img src="../assets/icons/shopping-bag.png" alt=""></button>
                 </div>
             `;
         
@@ -77,27 +77,11 @@ let clothesDiv = document.querySelector(".clothesDiv")
       tempDiv.innerHTML = productHTML;
     
       // Attach event listener to the like icon within the current product
-      const likeIcon = tempDiv.querySelector('.like_icon');
       const cartIcon = tempDiv.querySelector('.cart_icon');
-      let likeCount = get('.likes__count')
       let basketCount = get('.basket__count')
-      likeIcon.addEventListener('click', function(event) {
-          event.stopPropagation();
-          if(!isliked){
-            likeIcon.style.backgroundImage = "url('../assets/icons/red_like_icon.svg')";
-            addItemToStorage(id, "likes")
-            let likes = getStorageItems('likes')
-            let count1 = likes.length
-            likeCount.innerText = count1
-          }else{
-            likeIcon.style.backgroundImage = "url('../assets/icons/like_icon.svg')";
-            removeItemFromStorage(id, 'likes')
-            let likes = getStorageItems('likes')
-            let count1 = likes.length
-            likeCount.innerText = count1      
-          }
-      });
-    
+ 
+
+
       // Append the product HTML from the temporary div to the Document Fragment
       fragment.appendChild(tempDiv.firstElementChild);
     });
@@ -122,4 +106,6 @@ let clothesDiv = document.querySelector(".clothesDiv")
      linkButton.addEventListener('click', function(){
          window.location.href = 'https://uzum.uz/uz/category/arzon-narxlar--330'
      })
+     likeBg()
+     addToCart()
 }

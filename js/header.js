@@ -1,4 +1,4 @@
-import { menuArray, get, getStorageItems} from "./utils.js";
+import { menuArray, get, getStorageItems, likeBg, addToCart} from "./utils.js";
 export function header(){
     window.addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
@@ -64,7 +64,6 @@ export function header(){
             itemElement.innerHTML = `
                 <div class="product" id="${id}">
                     <button class="like_icon">
-                        <img src="../assets/icons/like_icon.svg" alt="like it">
                     </button>
                     <a href="./single.html?id=${id}">
                         <div class="product_image">
@@ -90,7 +89,7 @@ export function header(){
                             </div>
                         </div>
                     </a>
-                    <button class="cart_icon" id="${id}"><img src="../assets/icons/shopping-bag.png" alt=""></button>
+                    <button class="cart_icon"><img src="../assets/icons/shopping-bag.png" alt=""></button>
                 </div>
             `;
     
@@ -276,5 +275,7 @@ export function header(){
     
     
     
+  addToCart()
+  likeBg()
     });
 }

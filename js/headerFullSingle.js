@@ -1,4 +1,4 @@
-import { get, menuArray,isliked, removeItemFromStorage, addItemToStorage, getStorageItems } from "./utils.js";
+import { get, menuArray,removeItemFromStorage, addItemToStorage, getStorageItems, addToCart, likeBg } from "./utils.js";
 import { header } from "./header.js";
 header()
 let cardBox = get(".singlePage__main-box");
@@ -67,26 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const tempDiv = document.createElement('div');
       tempDiv.innerHTML = productHTML;
     
-    //   Attach event listener to the like icon within the current product
-      const likeIcon = tempDiv.querySelector('.like_icon');
-      const cartIcon = tempDiv.querySelector('.cart_icon');
-      let likeCount = get('.likes__count')
-      likeIcon.addEventListener('click', function(event) {
-          event.stopPropagation();
-          if(!isliked){
-            likeIcon.style.backgroundImage = "url('../assets/icons/red_like_icon.svg')";
-            addItemToStorage(id, "likes")
-            let likes = getStorageItems('likes')
-            let count1 = likes.length
-            likeCount.innerText = count1
-          }else{
-            likeIcon.style.backgroundImage = "url('../assets/icons/like_icon.svg')";
-            removeItemFromStorage(id, 'likes')
-            let likes = getStorageItems('likes')
-            let count1 = likes.length
-            likeCount.innerText = count1 
-          }
-      });
     
       fragment.appendChild(tempDiv.firstElementChild);
       cardBox.appendChild(fragment);
@@ -101,4 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
     mainNavbar.innerHTML = `
     <a href="../html/headerFullSingle.html?category=${category}">${category} <i class="fa-solid fa-chevron-right"></i></a> 
     `;
+    addToCart()
+    likeBg()
 })

@@ -30,8 +30,7 @@
 .discountDiv{
   @extend %productDiv;
   width: 100%;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 .electronicsDiv{
     @extend %productDiv;

@@ -1,3 +1,4 @@
+import displayModal from "./modal.js";
 const fetchProducts = async (url) => {
   try {
     const resp = await fetch(url);
@@ -7,7 +8,6 @@ const fetchProducts = async (url) => {
     console.error("An error occurred during the fetch:", error);
   }
 };
-let isliked = false
 function get(item) {
   if (document.querySelector(item)) {
     return document.querySelector(item);
@@ -30,17 +30,17 @@ function addUserItemToStorage(id, email, username, password) {
 }
 
 function addItemToStorage(productID, key) {
-  const likes = getStorageItems(key) || []
-  const { id } = likes;
-  const existingItem = likes.find((product) => product.id == productID)
+  const likes = getStorageItems(key) || [];
+  const existingItemIndex = likes.findIndex((product) => product.id == productID);
   const comingitem = menuArray.find((item) => item.id == productID);
 
-  if (!existingItem) {
+  if (existingItemIndex === -1) {
     likes.push(comingitem);
     localStorage.setItem(key, JSON.stringify(likes));
-    isliked = true
-  }else{
-    console.log('there is no product with ID', id);
+  } else {
+    likes.splice(existingItemIndex, 1); // Remove the existing item
+    localStorage.setItem(key, JSON.stringify(likes));
+    console.log('Item removed:', productID);
   }
 }
 
@@ -50,7 +50,74 @@ function removeItemFromStorage(id, key) {
   const likes = getStorageItems(key);
   const updatedLikes = likes.filter((item) => item.id != id);
   localStorage.setItem(key, JSON.stringify(updatedLikes));
-  isliked = false
+}
+function addToCart(){
+  let cartIcons = document.querySelectorAll(".cart_icon")
+  console.log(cartIcons);
+cartIcons.forEach(cartIcon =>{
+    cartIcon.addEventListener('click', function(){
+        let cartIconId = cartIcon.closest('div').id
+        console.log(cartIconId);
+       displayModal(cartIconId)          
+    })
+})
+}
+function likeBg() {
+  let newMenuArray = getStorageItems('menuArray');
+  const likeIcons = document.querySelectorAll('.like_icon');
+  
+  likeIcons.forEach(likeIcon => {
+      let likeIconId = likeIcon.closest('div').id;
+      const newObject = newMenuArray.find((item) => item.id == likeIconId);
+      let isliked = newObject.isliked;
+
+      if (isliked) {
+          likeIcon.style.backgroundImage = "url('../assets/icons/red_like_icon.svg')";
+      } else {
+          likeIcon.style.backgroundImage = "url('../assets/icons/like_icon.svg')";
+      }
+
+      likeIcon.addEventListener('click', function() {
+          if (!isliked) {
+              addToLikes(likeIconId);
+              likeIcon.style.backgroundImage = "url('../assets/icons/red_like_icon.svg')";
+          } else {
+              removeFromLikes(likeIconId);
+              likeIcon.style.backgroundImage = "url('../assets/icons/like_icon.svg')";
+          }
+          isliked = !isliked; // Toggle isliked status
+      });
+  });
+}
+
+function addToLikes(id) {
+  let likeCount = get('.likes__count');
+  let newMenuArray = getStorageItems('menuArray');
+  const likeItem = newMenuArray.find((item) => item.id == id);
+  
+  if (!likeItem.isliked) {
+      likeItem.isliked = true;
+      addItemToStorage(id, "likes");
+      let likes = getStorageItems('likes');
+      let count1 = likes.length;
+      likeCount.innerText = count1;
+      localStorage.setItem('menuArray', JSON.stringify(newMenuArray));
+  }
+}
+
+function removeFromLikes(id) {
+  let likeCount = get('.likes__count');
+  let newMenuArray = getStorageItems('menuArray');
+  const likeItem = newMenuArray.find((item) => item.id == id);
+  
+  if (likeItem.isliked) {
+      likeItem.isliked = false;
+      removeItemFromStorage(id, 'likes');
+      let likes = getStorageItems('likes');
+      let count1 = likes.length;
+      likeCount.innerText = count1;
+      localStorage.setItem('menuArray', JSON.stringify(newMenuArray));
+  }
 }
 
 const menuArray = [
@@ -1903,27 +1970,37 @@ const menuArray = [
     image: "https://cdn.dummyjson.com/product-images/150/1.jpg",
   },
 ];
+function setMenuArrayToLocalStorage(menuArray) {
+  if (!localStorage.getItem('menuArray')) {
+      localStorage.setItem('menuArray', JSON.stringify(menuArray));
+  }
+}
+setMenuArrayToLocalStorage(menuArray)
+// console.log(menuArray);
 menuArray.forEach(item=>{
   let category = item.category
+  item.isliked = false 
   let array =[]
   if (typeof category === 'string') {
     array.push(category)
     array.push("Все")
     item.category = array
-} else if (Array.isArray(category)) {
-   category.push("Все")
-} else {
+  } else if (Array.isArray(category)) {
+    category.push("Все")
+  } else {
     console.log("Invalid category format");
-}
+  }
+  // localStorage.setItem('menuArray', JSON.stringify(menuArray));
 })
 export {
   fetchProducts,
   get,
-  isliked,
   menuArray,
   getStorageItems,
   addUserItemToStorage,
   addItemToStorage,
   removeItemFromStorage,
-  
+  addToLikes,
+  likeBg,
+  addToCart
 };

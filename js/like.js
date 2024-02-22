@@ -1,4 +1,4 @@
-import { get, getStorageItems, removeItemFromStorage } from "./utils.js";
+import { get, getStorageItems, removeItemFromStorage , addToCart} from "./utils.js";
 import { header } from "./header.js";
 header()
 let likesDiv =get('#likesDiv')
@@ -71,3 +71,4 @@ function displayLikes(productDiv){
     productDiv.appendChild(fragment);
 }
 displayLikes(likesDiv)
+addToCart()

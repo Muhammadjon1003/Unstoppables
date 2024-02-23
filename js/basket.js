@@ -32,7 +32,7 @@ cartStorage.map(product =>{
             </div>
             <p> ${formatPrice(discountPrice*1000)} сум/ед</p>
           </div>
-          <div class="price">
+          <div class="cart__product_price_x">
             <p><span class="product_price1">${formatPrice(discountPrice*1000)} сум</span></p>
             <p><span class="product_price2">${formatPrice(price*1000)} сум</span></p>
           </div>

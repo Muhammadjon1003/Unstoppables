@@ -216,10 +216,96 @@
 
 
        <main>
-        <div class="container">
-          <div class="singlePage__main-box">
-            <div class="main_navbar"></a> </div>
+        <div class="category_container">
+          <div class="container-left">
+            <h2>Категории</h2>
+            <section class="products">
+              <div class="filters-container">
+                <!-- <h4>Категории</h4> -->
+                <article class="companies" id="companiesDOM">
+                </article>
+          
+                <div class="price">
+                  <header><h4>Цена, so'm</h4></header>
+                  <div class="price-input">
+                    <div class="field">
+                      <span>от</span>
+                      <input type="number" class="input-min" value="1000">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                      <span>до</span>
+                      <input type="number" class="input-max" value="1000000">
+                    </div>
+                  </div>
+                  <div class="input_result_slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min" min="1000" max="100000" value="0" step="1000">
+                    <input type="range" class="range-max" min="1000" max="100000" value="100000" step="1000">
+                  </div>
+                </div>
+          
+                <div class="color-contain">
+                  <h4>Цвет</h4>
+                  <ul class="colors">
+                    <li class="colors-items">
+                      <img class="colors-items-img1" src="../assets/images/brown.png" alt="brown" width="40" height="35">
+                      <p>Коричневый</p>
+                    </li>
+                    <li class="colors-items">
+                      <img class="colors-items-img2" src="../assets/images/red.png" alt="qizil" width="47" height="47">
+                      <p>Красный</p>
+                    </li>
+                    <li class="colors-items">
+                      <img class="colors-items-img3" src="../assets/images/green.png" alt="yashil" width="37" height="37">
+                      <p>Зеленый</p>
+                    </li>
+                    <li class="colors-items">
+                      <img class="colors-items-img4" src="../assets/images/Khaki.png" alt="Khaki" width="40" height="40">
+                      <p>Хаки</p>
+                    </li>
+                    <li class="colors-items">
+                      <img class="colors-items-img5" src="../assets/images/Violet.png" alt="binafsha" width="39" height="39">
+                      <p>Фиолетовый</p>
+                    </li>
+                    <li class="colors-items">
+                      <img class="colors-items-img6" src="../assets/images/pink.png" alt="pushti" width="45" height="35">
+                      <p>Розовый</p>
+                    </li>
+                  </ul>
+                  <p>Ещё 16</p>
+                </div>
+          </div>
+        </section>
+      </div>
+      <div class="container-right">
+        <h1>Низкие цены  </h1>
+        <p>В подборке <span id="productCountNumber"></span> товаров из категорий <span class="category_name"></span> </p>
+        <div class="title-right-elem">
+          <a href="https://uzum.uz/ru/category/nizkie-ceny--330?subCategoryId=10023">
+            <button class="title-right-elem-btn">Женские аксесуары</button>
+          </a>
+          <a href="https://uzum.uz/ru/category/nizkie-ceny--330?subCategoryId=10044">
+            <button class="title-right-elem-btn">Смартфоны</button>
+          </a>
+          <a href="https://uzum.uz/ru/category/nizkie-ceny--330?subCategoryId=10398">
+            <button class="title-right-elem-btn">Запчасти</button>
+          </a>
+          <a href="https://uzum.uz/ru/category/nizkie-ceny--330?subCategoryId=10115">
+            <button class="title-right-elem-btn">Товары для кухни</button>
+          </a>
+          <a href="https://uzum.uz/ru/category/nizkie-ceny--330?subCategoryId=10021">
+            <button class="title-right-elem-btn">Мужские аксесуары</button>
+          </a>
+          <a href="https://uzum.uz/ru/category/nizkie-ceny--330?subCategoryId=10162">
+            <button class="title-right-elem-btn">Игрушки и игры</button>
+          </a>
         </div>
+        <div class="singlePage__main-box">
+        </div>
+      </div>
         </div>
        </main>
        <div class="modal">

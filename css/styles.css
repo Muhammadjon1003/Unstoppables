@@ -1319,4 +1319,175 @@ body::-webkit-scrollbar-thumb {
   padding-top: 15px;
   font-size: 12px;
   opacity: 0.6;
+}
+
+.single__page-main {
+  margin: 80px 0px;
+}
+.single__page-main .row {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.single__page-main .photo {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
+}
+.single__page-main .photo .foto {
+  width: 80px;
+  height: 110px;
+  background-color: #EFEFEF;
+}
+.single__page-main .miniImg {
+  width: 100px;
+  height: 100px;
+}
+.single__page-main .col-xl-4 {
+  width: 410px;
+  height: 600px;
+  margin: auto 100px auto 20px;
+  box-sizing: border-box;
+}
+.single__page-main .col-xl-4 .bigImg {
+  width: 100%;
+  height: 100%;
+}
+.single__page-main .col-xl-6 {
+  width: 600px;
+  padding-top: 20px;
+}
+.single__page-main .col-xl-6 .star-favourite {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.single__page-main .col-xl-6 .star-favourite .star, .single__page-main .col-xl-6 .star-favourite .favourite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single__page-main .col-xl-6 .star-favourite .star .star-text, .single__page-main .col-xl-6 .star-favourite .star .favourite-text, .single__page-main .col-xl-6 .star-favourite .favourite .star-text, .single__page-main .col-xl-6 .star-favourite .favourite .favourite-text {
+  margin-left: 5px;
+}
+.single__page-main .col-xl-6 .title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+.single__page-main .col-xl-6 .info {
+  width: 260px;
+  height: -moz-max-content;
+  height: max-content;
+}
+.single__page-main .col-xl-6 .info .texts1, .single__page-main .col-xl-6 .info .texts2 {
+  display: flex;
+  justify-content: space-between;
+}
+.single__page-main .col-xl-6 .info .texts1 .vivo, .single__page-main .col-xl-6 .info .texts2 .vivo {
+  text-decoration: underline;
+}
+.single__page-main .col-xl-6 .info .texts1 p, .single__page-main .col-xl-6 .info .texts2 p {
+  margin: 10px 0;
+}
+.single__page-main .col-xl-6 hr {
+  margin: 20px auto 25px;
+}
+.single__page-main .col-xl-6 .imgSvet .svetImg {
+  width: 48px;
+  height: 68px;
+  border: 2px solid #EFEFEF;
+  margin: 15px 0px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.single__page-main .col-xl-6 .buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.single__page-main .col-xl-6 .buttons .button {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.single__page-main .col-xl-6 .buttons .button button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.single__page-main .col-xl-6 .price-texts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.single__page-main .col-xl-6 .price-texts p {
+  margin: 0;
+}
+.single__page-main .col-xl-6 .price-texts .number {
+  font-size: 23px;
+  font-weight: 600;
+}
+.single__page-main .col-xl-6 .price-texts .skidka {
+  font-weight: 500;
+  text-decoration: line-through;
+  color: gray;
+}
+.single__page-main .col-xl-6 .price-texts .link {
+  background: rgb(59, 0, 125);
+  border-radius: 3px;
+  padding: 3px 6px;
+}
+.single__page-main .col-xl-6 .price-texts .link .link-text {
+  color: white;
+  text-decoration: none;
+}
+.single__page-main .col-xl-6 .sht {
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+}
+.single__page-main .col-xl-6 .zakaz {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.single__page-main .col-xl-6 .zakaz .Btn1, .single__page-main .col-xl-6 .zakaz .Btn2 {
+  width: 290px;
+  padding: 15px 0;
+  border: 2px solid #7000FF;
+  border-radius: 10px;
+}
+.single__page-main .col-xl-6 .zakaz .Btn1 .BtnText, .single__page-main .col-xl-6 .zakaz .Btn2 .BtnText {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.single__page-main .col-xl-6 .zakaz .Btn1 {
+  background-color: #7000FF;
+}
+.single__page-main .col-xl-6 .zakaz .Btn1 .BtnText {
+  color: white;
+}
+.single__page-main .col-xl-6 .zakaz .Btn2 {
+  background-color: white;
+}
+.single__page-main .col-xl-6 .zakaz .Btn2 .BtnText {
+  color: #7000FF;
+}
+.single__page-main .col-xl-6 .price, .single__page-main .col-xl-6 .kolichestva {
+  color: #7000FF;
+  text-align: start;
+  display: inline-block;
+  margin: 20px 0px;
 }/*# sourceMappingURL=styles.css.map */

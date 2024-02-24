@@ -1,0 +1,180 @@
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .photo {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    height: max-content;
+  
+    .foto {
+      width: 80px;
+      height: 110px;
+      background-color: #EFEFEF;
+  
+      .miniImg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+  .col-xl-4 {
+    width: 410px;
+    height: 600px;
+    margin: auto 100px auto 20px;
+    box-sizing: border-box;
+  
+    .bigImg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .col-xl-6 {
+    width: 600px;
+    padding-top: 20px;
+  
+    .star-favourite {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      .star, .favourite {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .star-text, .favourite-text {
+          margin-left: 5px;
+        }
+      }
+    }
+  
+    .title {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 0;
+    }
+  
+    .info {
+      width: 260px;
+      height: max-content;
+  
+      .texts1, .texts2 {
+        display: flex;
+        justify-content: space-between;
+  
+        .vivo {
+          text-decoration: underline;
+        }
+  
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+  
+    hr{
+      margin: 20px auto 25px;
+    }
+  
+    .imgSvet {
+      .svetImg {
+        width: 58px;
+        height: 78px;
+        border: 2px solid #EFEFEF;
+      }
+    }
+  
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .button {
+        width: max-content;
+        height: max-content;
+        border: 1px solid gray;
+        border-radius: 5px;
+  
+        button {
+          width: 40px;
+          height: 40px;
+          margin: 0;
+          border: none;
+          background-color: transparent;
+          font-size: 20px;
+        }
+      }
+    }
+  
+    .price-texts{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      p{
+        margin: 0;
+      }
+      .number{
+        font-size: 23px;
+        font-weight: 600;
+      }
+      .skidka{
+        font-weight: 500;
+        text-decoration: line-through;
+        color: gray;
+      }
+      .link{
+        background: rgb(59, 0, 125);
+        border-radius: 3px;
+        padding: 3px 6px;
+  
+        .link-text{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    .sht{
+      border: 1px solid gray;
+      padding: 10px;
+      background-color: white;
+    }
+  
+    .zakaz{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      .Btn1, .Btn2{
+        width: 290px;
+        padding: 15px 0;
+        border: 2px solid #7000FF;
+        border-radius: 10px;
+  
+        .BtnText{
+          font-size: 18px;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      }
+      .Btn1{
+        background-color: #7000FF;
+        .BtnText{
+          color: white;
+        }
+      }
+      .Btn2{
+        background-color: white;
+        .BtnText{
+          color: #7000FF;
+        }
+      }
+    }
+  }

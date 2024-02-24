@@ -38,9 +38,9 @@ function addItemToStorage(productID, key) {
     likes.push(comingitem);
     localStorage.setItem(key, JSON.stringify(likes));
   } else {
-    likes.splice(existingItemIndex, 1); // Remove the existing item
-    localStorage.setItem(key, JSON.stringify(likes));
-    console.log('Item removed:', productID);
+    // likes.splice(existingItemIndex, 1); // Remove the existing item
+    // localStorage.setItem(key, JSON.stringify(likes));
+    // console.log('Item removed:', productID);
   }
 }
 

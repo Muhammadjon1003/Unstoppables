@@ -15,6 +15,7 @@ export default function displayModal(productId){
     let basketButton = document.querySelector('.basket-btn')
     basketButton.addEventListener('click', function(){
         addItemToStorage(productId, 'korzina')
+        // console.log(productId);
         modalElement.style.display = 'none';
         window.location.reload()
     })

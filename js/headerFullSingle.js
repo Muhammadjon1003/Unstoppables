@@ -11,6 +11,8 @@ let categoryName = document.querySelector(".category_name");
         const category = urlParams.get('category');
          categoryName.textContent = category
          let count = 0
+         const minPrice = parseInt(priceInput[0].value),
+               maxPrice = parseInt(priceInput[1].value);
         // const productNames = get("#productNames"); 
     
         function formatPrice(price) {
